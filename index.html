@@ -20,13 +20,10 @@
       <div class="container">
         <div class="flex-items">
           <a href="home.html"
-            ><img
-              src="/img/LogoBig.png"
-              alt="squareeyes logo"
-              height="32px"
+            ><img src="/img/LogoBig.png" alt="squareeyes logo" height="32px"
           /></a>
           <a href="login.html" style="height: 24px">
-            <span class="iconify" data-icon="healthicons:ui-user-profile"
+            <span class="iconify icons" data-icon="healthicons:ui-user-profile"
               >login</span
             ></a
           >
@@ -34,25 +31,67 @@
       </div>
     </header>
     <main>
-      <section class="hero-banner">
-        <div class="container">
-          <span class="slogan"><img src="/img/slogan-dt.png" alt="slogan" width="233px"/></span>
-          <img src="/img/InfoVideo-dt.png" alt="info video" />
-          <article>
-            <p>
+      <div class="container">
+        <div class="flex-box">
+          <section class="hero-banner">
+            <img
+              class="flex1"
+              src="/img/slogan-dt.png"
+              alt="slogan"
+              style="width: 90%"
+            />
+            <img
+              class="flex2"
+              src="/img/InfoVideo-dt.png"
+              alt="info video"
+              style="width: 100%; height: 60%"
+            />
+          </section>
+          <aside class="flex3">
+            <p class="text">
               Here's the shortfilm-site where you can follow filmmakers and
-              cinéphiles. Signup's free. Enjoy free material and rent films (of
-              filmmakers choosing) for a nice price. 30% goes to keeping this site
-              up and running, and the rest to the filmmakers. For more information
-              check out the video.
+              cinéphiles. Easy to upload new shortfilms. Enjoy free films and
+              rent films for a nice price. Write and read the latest reviews.
+              <br />
+              <strong>Sign up's free!</strong>
             </p>
-            <p>
-              Sign up, get entertained and support your favorite filmmaker
-              today!
+            <p class="text">
+              30% of the earnings goes to keeping this site up and running, and
+              70% goes back to the filmmakers. Check out video for more
+              information.
             </p>
-          </article>
+          </aside>
+          <div class="btn">
+            <a href="signup.html" target="_blank">
+              <button class="raise flex4">Sign up for free!</button>
+            </a>
+          </div>
         </div>
-      </section>
-    <footer class="footer"><div class="container"></div></footer>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="flex-footer">
+          <nav class="nav-footer">
+            <a href="policy.html">Our Policy</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="faq.html">FAQ</a>
+          </nav>
+          <img class="flex-1" src="/img/Download.png" alt="download" />
+          <img
+            class="flex-2"
+            src="/img/Secure payment.png"
+            alt="secure payment"
+          />
+          <p class="copyright flex-3">
+            <small>
+              © 2021 Created by Linda Sandaker. For educational purpos only.
+              Photos are credited Unsplash.com
+            </small>
+          </p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

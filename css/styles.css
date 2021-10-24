@@ -1,9 +1,8 @@
 body {
   background-color: #040e20;
   margin: 0 auto;
-  color: #f6f9fe;
-  font-family: "Segoe UI", Roboto, Oxygen, Ubuntu, "Open Sans", "Helvetica Neue",
-    sans-serif;
+  color: hsl(218, 80%, 98%);
+  font-family: "DM Sans" sans-serif;
 }
 
 .icons {
@@ -22,39 +21,51 @@ body {
   margin: 0 auto;
 }
 
-.flex-items {
+.header-items {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.39em 1em 0 1em;
 }
 
-.hero-banner {
+.main {
   background-color: #040e20;
+  margin: 2em 1em 2em 1em;
 }
 
-.flex-box {
+.title {
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
+  max-height: 160px;
+}
+
+#grid {
+  display: grid;
+  grid-auto-columns: auto;
+  justify-content: center;
   align-items: center;
-  margin: 1em;
 }
 
-.flex1,
-.flex3,
-.flex4 {
-  margin: 1em;
+.infovideo {
+  width: 100%;
 }
 
-.flex2 {
-  margin-top: 1em;
-  margin-bottom: 1em;
+.aside {
+  width: 88%;
+  margin: 0 auto;
 }
 
 .text {
-  margin-top: 0;
-  margin-bottom: 1em;
+  font-family: "DM Sans";
+  font-size: 16px;
+  font-weight: medium;
+  padding: 0.5em;
+}
+
+.cta {
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .raise {
@@ -63,7 +74,8 @@ body {
   background-color: #caa316;
   color: #fefdfa;
   font-size: 16px;
-  padding: 14px 56px;
+  padding: 14px 80px;
+  margin: 1em;
   cursor: pointer;
   display: inline-block;
 }
@@ -75,24 +87,82 @@ body {
 }
 
 .footer {
-  position: relative;
-  bottom: 0;
   width: 100%;
   background-color: #4d139b;
   height: 172px;
 }
 
-.flex-footer {
+.nav-footer a {
+  color: #f6f9fe;
+}
+
+.nav-footer a:hover {
+  color: blue;
+}
+
+.footer-items {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
-  margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 0.5em;
+  height: 172px;
+}
+
+.img-item {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+}
+
+.footer-img {
   margin-bottom: 0.5em;
 }
 
 .copyright {
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 10px;
+  font-weight: 200;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .title {
+    display: flex;
+    flex-direction: row;
+    max-width: 732px;
+    margin: 0 auto;
+  }
+
+  #grid {
+    display: inline-grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50% 50%;
+  }
+
+  .text {
+    font-family: "DM Sans";
+    font-size: 18px;
+    font-weight: medium;
+    padding: 0.5em;
+  }
+
+  .footer-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 1em;
+  }
+
+  .nav-footer {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+  }
+
+  .copyright-item {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }

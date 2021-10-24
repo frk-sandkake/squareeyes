@@ -6,19 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
     <header class="header">
       <div class="container">
-        <div class="flex-items">
+        <div class="header-items">
           <a href="home.html"
             ><img src="/img/LogoBig.png" alt="squareeyes logo" height="32px"
           /></a>
@@ -30,24 +29,19 @@
         </div>
       </div>
     </header>
-    <main>
+    <main class="main">
       <div class="container">
-        <div class="flex-box">
-          <section class="hero-banner">
-            <img
-              class="flex1"
-              src="/img/slogan-dt.png"
-              alt="slogan"
-              style="width: 90%"
-            />
-            <img
-              class="flex2"
-              src="/img/InfoVideo-dt.png"
-              alt="info video"
-              style="width: 100%; height: 60%"
-            />
-          </section>
-          <aside class="flex3">
+        <header class="title">
+          <img src="/img/slogan-dt.png" alt="slogan" width="80%" />
+        </header>
+        <section class="hero-banner" id="grid">
+          <img
+            class="infovideo"
+            id="item"
+            src="/img/InfoVideo-dt.png"
+            alt="info video"
+          />
+          <aside class="aside" id="item">
             <p class="text">
               Here's the shortfilm-site where you can follow filmmakers and
               cinéphiles. Easy to upload new shortfilms. Enjoy free films and
@@ -61,32 +55,38 @@
               information.
             </p>
           </aside>
-          <div class="btn">
-            <a href="signup.html" target="_blank">
-              <button class="raise flex4">Sign up for free!</button>
-            </a>
-          </div>
+        </section>
+
+        <div class="cta btn">
+          <a href="signup.html" target="_blank">
+            <button class="raise">Sign up for free!</button>
+          </a>
         </div>
       </div>
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="flex-footer">
-          <nav class="nav-footer">
-            <a href="policy.html">Our Policy</a>
-            <a href="about.html">About Us</a>
-            <a href="contact.html">Contact Us</a>
-            <a href="faq.html">FAQ</a>
+        <div class="footer-items">
+          <nav class="nav-footer item">
+            <a href="policy.html" style="padding: 0.5em">Our Policy</a>
+            <a href="about.html" style="padding: 0.5em">About Us</a>
+            <a href="contact.html" style="padding: 0.5em">Contact Us</a>
+            <a href="faq.html" style="padding: 0.5em">FAQ</a>
           </nav>
-          <img class="flex-1" src="/img/Download.png" alt="download" />
-          <img
-            class="flex-2"
-            src="/img/Secure payment.png"
-            alt="secure payment"
-          />
-          <p class="copyright flex-3">
+          <div class="img-item">
+            <img class="footer-img" src="/img/Download.png" alt="download" />
+            <img
+              class="footer-img2"
+              src="/img/Secure payment.png"
+              alt="secure payment"
+            />
+          </div>
+          <p class="copyright copyright-item">
             <small>
-              © 2021 Created by Linda Sandaker. For educational purpos only.
+              © 2021 Created by Linda Sandaker.
+              <br />
+              For educational purpos only.
+              <br />
               Photos are credited Unsplash.com
             </small>
           </p>

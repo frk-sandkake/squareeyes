@@ -139,6 +139,8 @@ body {
     justify-content: center;
     align-items: center;
     grid-template-columns: 50% 50%;
+    margin-bottom: 2em;
+    margin-top: 2em;
   }
 
   .text {

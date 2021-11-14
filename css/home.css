@@ -1,0 +1,121 @@
+.main-container {
+  background: var(--color-darkest-blue);
+  padding: 1rem;
+  margin: auto;
+}
+
+.main-container-items-films-overview {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--color-dark-blue);
+  margin: 1rem;
+  padding: 1rem;
+  width: 160px;
+  border-radius: 0.5rem;
+}
+
+.h-scroll {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  overflow-x: scroll;
+  cursor: pointer;
+  margin: auto;
+}
+
+.shortfilm-info-rating-favorite-save-share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shortfilm-info {
+  padding: 0 1rem 0 1rem;
+}
+
+.film-card-img {
+  width: 130px;
+  height: 130px;
+}
+
+.shortfilm-info .iconify {
+  width: 0.9rem;
+  height: 0.9rem;
+  padding: 0;
+  margin: 0;
+}
+
+.shortfilm-info h5 {
+  font-size: 0.8em;
+  padding: 0;
+  margin: 0;
+}
+
+.shortfilm-info p {
+  display: inline-block;
+  font-size: 0.7em;
+  padding: 0;
+  margin: 0;
+  opacity: 80%;
+}
+
+.shortfilm-info small {
+  font-size: 0.9em;
+  padding: 0;
+  margin: 0;
+}
+
+.shortfilm-review {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--color-darkest-blue);
+  border-radius: 0.5rem;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  width: 250px;
+}
+
+.shortfilm-review-info {
+  width: 125px;
+  padding: 0.5rem;
+  font-size: 0.6rem;
+}
+
+.shortfilm-review-img {
+  width: 80%;
+  border-radius: 12rem;
+  padding: 0.5rem;
+  margin: auto;
+}
+
+.film-card-review-img {
+  width: 100px;
+  height: 100px;
+}
+
+/**MEDIA QUERIES min 768px*/
+@media screen and (min-width: 768px) {
+  .main-container-items {
+    padding: 0 3rem 3rem 3rem;
+  }
+}
+/**MEDIA QUERIES min 768px END*/
+
+/**MEDIA QUERIES min 1024px*/
+@media screen and (min-width: 1024px) {
+}
+/**MEDIA QUERIES min 1024px END*/
+
+/**MEDIA QUERIES min 1440px
+@media screen and (min-width: 1440px) {
+  .main-container-items {
+    margin: 3rem 14rem 3rem 14rem;
+    padding: 1rem 0 1rem 0;
+  }
+}
+/**MEDIA QUERIES min 1440px END*/

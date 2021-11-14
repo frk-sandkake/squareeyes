@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Landing page for the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
+      content="Sign up page for the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
       For educational purposes only."
     />
     <link
@@ -20,10 +20,11 @@
     <link rel="stylesheet" href="/css/global.css" />
     <link rel="stylesheet" href="/css/a-href-icons.css" />
     <link rel="stylesheet" href="/css/buttons.css" />
+    <link rel="stylesheet" href="/css/form-input-fieldset.css" />
     <link rel="stylesheet" href="/css/header-footer.css" />
     <link rel="stylesheet" href="/css/navigation.css" />
-    <link rel="stylesheet" href="/css/index.css" />
-    <title>Landing page | SquareEyes</title>
+    <link rel="stylesheet" href="/css/signup.css" />
+    <title>Sign up | SquareEyes</title>
   </head>
   <body>
     <header class="top-header-container">
@@ -32,7 +33,7 @@
           <img
             class="top-header-container-item-logo"
             src="/img/logo.png"
-            alt="logo-square-eyes-connecting-filmlovers"
+            alt="logo"
           />
           <a href="#"
             ><span
@@ -47,33 +48,41 @@
     <main class="main-container">
       <div class="container">
         <header class="main-container-title">
-          <h1>SquareEyes</h1>
-          <h5><i>Connecting Film-lovers</i></h5>
+          <h1><i>Sign up!</i></h1>
         </header>
         <section class="main-container-items">
-          <img
-            class="main-container-item-info-video"
-            src="/img/info-video.jpg"
-            alt="info-video"
+          <div class="main-container-item-signup-text">
+            <p>
+              We're no fan of passwords here at <b>SquareEyes</b>. Good
+              passwords are hard to remember and can be lost to hackers. So we
+              have made a password-free login.
+            </p>
+            <p>
+              Instead of a password we'll send link to your e-mail address. The
+              link is new for each time you log in and is only valid for 10
+              minutes. Should you give us the wrong e-mail, no worries! It's
+              only possible to login to your account with your e-mail!
+            </p>
+            <p>
+              Submit e-mail address for your 10 minute valid sign up link here;
+            </p>
+          </div>
+          <label class="style-label-email" for="email"
+            >Email address<span class="mandatory-input">*</span></label
+          >
+          <input
+            class="style-placeholder-input-email"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="your@email.com"
           />
-          <aside class="main-container-item-info-text-btn">
-            <p>
-              Here's the shortfilm-site where you can follow filmmakers and
-              cinéphiles. Easy to upload new shortfilms. Enjoy free films and
-              rent films for a nice price. Write and read the latest reviews.
-              <br /><b>Sign up's free!</b>
-            </p>
-            <p>
-              30% of the earnings goes to keeping up the quality of the site,
-              the rest goes to the filmmakers. Check out our video for more!
-            </p>
-            <a
-              href="signup.html"
-              class="main-container-item-btn-primary-index function-hover-raise"
-            >
-              <button class="btn-primary function-hover-raise">Sign up</button>
-            </a>
-          </aside>
+          <a
+            href="about-me.html"
+            class="main-container-item-btn-primary-signup function-hover-raise"
+          >
+            <button class="btn-primary function-hover-raise">Submit</button>
+          </a>
         </section>
       </div>
     </main>
@@ -106,7 +115,7 @@
               alt="secure payment"
             />
           </section>
-          <small class="text-small"
+          <small class="footer-container-item-copyright text-small"
             >© 2021 Linda Sandaker. All rights reserved. <br />
             For educational purposes only. <br />
             All the beautiful photos are from

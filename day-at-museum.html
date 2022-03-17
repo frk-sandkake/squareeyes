@@ -10,6 +10,11 @@
       content="Film page for Day at the museum. For the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
       For educational purposes only."
     />
+    <title>Day at the museum - film page | SquareEyes</title>
+    <link rel="stylesheet" href="/css/form-input-fieldset.css" />
+    <link rel="stylesheet" href="/css/header-footer.css" />
+    <link rel="stylesheet" href="/css/day-at-museum.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -17,15 +22,6 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/icons.css" />
-    <link rel="stylesheet" href="/css/buttons.css" />
-    <link rel="stylesheet" href="/css/form-input-fieldset.css" />
-    <link rel="stylesheet" href="/css/header-footer.css" />
-    <link rel="stylesheet" href="/css/navigation.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/day-at-museum.css" />
-    <title>Day at the museum - film page | SquareEyes</title>
     <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
     <script>
       (function(h,o,t,j,a,r){
@@ -39,53 +35,53 @@
     </script>
   </head>
   <body>
-    <header class="top-header-container">
-      <div class="container">
-        <section class="top-header-container-items">
+  <header class="primary-header">
+    <div class="container">
+      <div class="primary-header-items flex">
+        <a href='index.html' class='logo'>
           <img
-            class="top-header-container-item-logo"
-            src="/img/logo.png"
-            alt="logo"
+            title='SquareEyes the shortfilm site that connects film-lovers'
+            src="./img/squareeyes-logo.svg"
+            alt="logo: Rectangle with brand name, slogan and camera-role"
           />
-          <nav class="main-navigation">
-            <a href="#" class="nav-link function-hover-raise">
-              <span class="iconify" data-icon="fluent:search-12-filled"
-                >search</span
-              >
-              <!--<span class="nav-text"><b>Search</b></span>-->
-            </a>
-            <a href="home.html" class="nav-link function-hover-raise">
-              <span class="desktop iconify" data-icon="bx:bxs-camera-home"
-                >home</span
-              >
-              <span class="nav-text"><b>Home</b></span>
-            </a>
-            <a href="#" class="nav-link function-hover-raise">
-              <span class="desktop iconify" data-icon="icon-park-outline:movie"
-                >Films</span
-              >
-              <span class="nav-text"><b>Films</b></span>
-            </a>
-            <a href="#" class="nav-link function-hover-raise">
-              <span
-                class="desktop iconify"
-                data-icon="fluent:star-edit-24-regular"
-                >Review</span
-              >
-              <span class="nav-text"><b>Reviews</b></span>
-            </a>
-            <a href="account.html" class="nav-link function-hover-raise">
-              <span
-                class="login iconify"
-                data-icon="healthicons:ui-user-profile"
-                >profile</span
-              >
-              <!--<span class="nav-text">Login</span>-->
-            </a>
-          </nav>
-        </section>
+        </a>
+        <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
+          <ul class="primary-navigation-ul flex-row-align-center">
+            <li class="nav-link function-hover-raise">
+              <a id='search' href="#" class="nav-link-a flex-column-align-center">
+                <i class="iconify" data-icon="fluent:search-12-filled"></i>
+                Search
+              </a>
+            </li>
+            <li class="nav-link hidden function-hover-raise">
+              <a id='archive' href="#" class="nav-link-a flex-column-align-center">
+                <i class="iconify" data-icon="icon-park-outline:movie"></i>
+                Archive
+              </a>
+            </li>
+            <li class="nav-link hidden function-hover-raise">
+              <a id='create' href="#" class="nav-link-a flex-column-align-center">
+                <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
+                Create
+              </a>
+            </li>
+            <li class="nav-link hidden function-hover-raise">
+              <a id='home' href="home.html" class="nav-link-a flex-column-align-center">
+                <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
+                Home
+              </a>
+            </li>
+            <li  id='login' class="nav-link hidden function-hover-raise">
+              <a href="signup.html" class="nav-link-a flex-column-align-center">
+                <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
+                Login
+              </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </header>
+    </div>
+  </header>
     <main class="main-container">
       <div class="container">
         <a href="home.html">Back to home</a>
@@ -182,45 +178,39 @@
         </section>
       </div>
     </main>
-    <footer class="footer-container">
+    <footer class="primary-footer">
       <div class="container">
-        <section class="footer-container-items">
-          <nav class="footer-container-item-navigation">
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>Our Policy</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>About Us</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>Contact Us</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>FAQ</span></a
-            >
+        <div class="primary-footer-items flex-column-align-center">
+          <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">Our Policy</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">About Us</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">Contact Us</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">FAQ</a>
           </nav>
-          <section class="footer-container-item-download-secure-img">
+          <div class="primary-footer-item-download-secure flex-column-align-center">
             <img
-              class="footer-container-item-download-img"
+              class="primary-footer-item-download-img"
               src="/img/download-android-ios.png"
               alt="download google-play apple-store"
+              width='200px'
+              height='auto'
             />
             <img
-              class="footer-container-item-secure-img"
+              class="primary-footer-item-secure-img"
               src="/img/secure-payment.png"
               alt="secure payment"
+              width='200px'
+              height='auto'
             />
-          </section>
-          <small class="footer-container-item-copyright text-small"
-            >© 2021 Linda Sandaker. <br />
-            All rights reserved. <br />
-            For educational purposes only. <br />
-            All the beautiful photos are from
-            <a href="https://unsplash.com" target="blank"
-              ><b>Unsplash.com</b></a
-            >
+          </div>
+          <small>
+            © 2021 Linda Sandaker. For educational purposes. <br/>
+            The beautiful photos are from
+            <a class='function-hover-raise' href="https://unsplash.com" target="blank"
+            ><b>Unsplash.com</b>
+            </a>
           </small>
-        </section>
+        </div>
       </div>
     </footer>
   </body>

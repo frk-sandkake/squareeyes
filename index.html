@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -10,6 +9,7 @@
       content="Landing page for the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
       For educational purposes only."
     />
+    <title>Landing page | SquareEyes</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -17,13 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/icons.css" />
-    <link rel="stylesheet" href="/css/buttons.css" />
     <link rel="stylesheet" href="/css/header-footer.css" />
-    <link rel="stylesheet" href="/css/navigation.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
     <link rel="stylesheet" href="/css/index.css" />
-    <title>Landing page | SquareEyes</title>
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" async></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTM3VJ49CR"></script>
     <script>
@@ -45,96 +42,113 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
   </head>
-  <body>
-    <header class="top-header-container">
+  <body id='body'>
+  <p><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
+    <header class="primary-header">
       <div class="container">
-        <section class="top-header-container-items">
-          <img
-            class="top-header-container-item-logo"
-            src="/img/logo.png"
-            alt="logo-square-eyes-connecting-filmlovers"
-          />
-          <a href="#"
-            ><span
-              class="top-header-container-item-login iconify"
-              data-icon="healthicons:ui-user-profile"
-              >login</span
-            ></a
-          >
-        </section>
+        <div class="primary-header-items flex">
+          <a href='index.html' class='logo'>
+            <img
+            title='SquareEyes the shortfilm site that connects film-lovers'
+            src="./img/squareeyes-logo.svg"
+            alt="logo: Rectangle with brand name, slogan and camera-role"
+            />
+          </a>
+          <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
+            <ul class="primary-navigation-ul flex-row-align-center">
+              <li class="nav-link function-hover-raise">
+                <a id='search' href="#" class="nav-link-a flex-column-align-center">
+                  <i class="iconify" data-icon="fluent:search-12-filled"></i>
+                  Search
+                </a>
+              </li>
+              <li class="nav-link hidden function-hover-raise">
+                <a id='archive' href="#" class="nav-link-a flex-column-align-center">
+                  <i class="iconify" data-icon="icon-park-outline:movie"></i>
+                  Archive
+                </a>
+              </li>
+              <li class="nav-link hidden function-hover-raise">
+                <a id='create' href="#" class="nav-link-a flex-column-align-center">
+                  <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
+                  Create
+                </a>
+              </li>
+              <li class="nav-link hidden function-hover-raise">
+                <a id='home' href="home.html" class="nav-link-a flex-column-align-center">
+                  <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
+                  Home
+                </a>
+              </li>
+              <li  id='login' class="nav-link hidden function-hover-raise">
+                <a href="signup.html" class="nav-link-a flex-column-align-center">
+                  <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
+                  Login
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-    <main class="main-container">
+    <main class="main-landing-page">
       <div class="container">
-        <header class="main-container-title">
-          <h1>SquareEyes</h1>
-          <h5><i>Connecting Film-lovers</i></h5>
-        </header>
-        <section class="main-container-items">
+        <section class="main-items-introduction flex-column-align-center">
+          <h1 class='site-title'>SQUARE EYES</h1>
+          <div class='subtitle' role='doc-subtitle'>CONNECTING CINÉPHILES</div>
           <img
-            class="main-container-item-info-video"
+            class="main-item-video"
             src="/img/info-video.jpg"
             alt="info-video"
           />
-          <aside class="main-container-item-info-text-btn">
+          <aside class="main-item-text-btn-sign-up flex-column-align-center">
             <p>
-              Here's the shortfilm-site where you can follow filmmakers and
-              cinéphiles. Easy to upload new shortfilms. Enjoy free films and
-              rent films for a nice price. Write and read the latest reviews.
-              <br /><b>Sign up's free!</b>
+              Follow filmmakers and cinéphiles. <br/>
+              Free films and films to rent for a nice price. <br/>
+              Upload your shortfilms, read and write reviews, all with ease.
             </p>
-            <p>
-              30% of the earnings goes to keeping up the quality of the site,
-              the rest goes to the filmmakers. Check out our video for more!
-            </p>
-            <a
-              href="signup.html"
-              class="main-container-item-btn-primary-index function-hover-raise"
-            >
-              <button class="btn-primary function-hover-raise">Sign up</button>
-            </a>
+            <button class="btn-primary btn-mobile function-hover-raise"><a href='signup.html'>Sign up for free!</a></button>
+            <small>
+              Filmmakers get 70 % of the revenue!
+            </small>
           </aside>
         </section>
+        <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
       </div>
     </main>
-    <footer class="footer-container">
+    <footer class="primary-footer">
       <div class="container">
-        <section class="footer-container-items">
-          <nav class="footer-container-item-navigation">
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>Our Policy</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>About Us</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>Contact Us</span></a
-            >
-            <a href="#" class="footer-link function-hover-raise"
-              ><span>FAQ</span></a
-            >
+        <div class="primary-footer-items flex-column-align-center">
+          <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">Our Policy</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">About Us</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">Contact Us</a>
+            <a title='Not in use' href="#" class="nav-link function-hover-raise">FAQ</a>
           </nav>
-          <section class="footer-container-item-download-secure-img">
+          <div class="primary-footer-item-download-secure flex-column-align-center">
             <img
-              class="footer-container-item-download-img"
+              class="primary-footer-item-download-img"
               src="/img/download-android-ios.png"
               alt="download google-play apple-store"
+              width='200px'
+              height='auto'
             />
             <img
-              class="footer-container-item-secure-img"
+              class="primary-footer-item-secure-img"
               src="/img/secure-payment.png"
               alt="secure payment"
+              width='200px'
+              height='auto'
             />
-          </section>
-          <small class="text-small"
-            >© 2021 Linda Sandaker. All rights reserved. <br />
-            For educational purposes only. <br />
-            All the beautiful photos are from
-            <a href="https://unsplash.com" target="blank"
-              ><b>Unsplash.com</b></a
-            >
+          </div>
+          <small>
+            © 2021 Linda Sandaker. For educational purposes. <br/>
+            The beautiful photos are from
+            <a class='function-hover-raise' href="https://unsplash.com" target="blank"
+              ><b>Unsplash.com</b>
+            </a>
           </small>
-        </section>
+        </div>
       </div>
     </footer>
   </body>

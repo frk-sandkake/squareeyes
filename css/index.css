@@ -1,7 +1,4 @@
-.main-landing-page {
-  margin: 0 auto;
-}
-
+/* || Landing page*/
 .main-items-introduction {
   justify-content: center;
   gap: 2rem;
@@ -10,7 +7,6 @@
 
 .site-title {
   font-family: "Archivo Narrow", sans-serif;
-
 }
 
 .subtitle {

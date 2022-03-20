@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <script src="https://code.iconify.design/2/2.0.4/iconify.min.js"></script>
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,10 +10,6 @@
       For educational purposes only."
     />
     <title>Home page | SquareEyes</title>
-    <link rel="stylesheet" href="/css/form-input-fieldset.css" />
-    <link rel="stylesheet" href="/css/header-footer.css" />
-    <link rel="stylesheet" href="/css/home.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -22,6 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/header-footer.css" />
+    <link rel="stylesheet" href="/css/home.css" />
+    <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTM3VJ49CR"></script>
     <script>
@@ -37,53 +36,49 @@
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
         h._hjSettings={hjid:2867252,hjsv:6};
         a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
+        r=o.createElement('script');r.async=true;
         r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
         a.appendChild(r);
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
   </head>
-  <body>
-  <header class="primary-header">
+<body>
+<header class="primary-header">
     <div class="container">
       <div class="primary-header-items flex">
         <a href='index.html' class='logo'>
           <img
             title='SquareEyes the shortfilm site that connects film-lovers'
-            src="./img/squareeyes-logo.svg"
+            src="./uploads/squareeyes-logo.svg"
             alt="logo: Rectangle with brand name, slogan and camera-role"
           />
         </a>
         <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
           <ul class="primary-navigation-ul flex-row-align-center">
-            <li class="nav-link function-hover-raise">
-              <a id='search' href="#" class="nav-link-a flex-column-align-center">
+            <li class="nav-link function-hover-line">
+              <a id='search' title='Search' href="#" class="nav-link-a flex-column-align-center">
                 <i class="iconify" data-icon="fluent:search-12-filled"></i>
-                Search
+
               </a>
             </li>
-            <li class="nav-link hidden function-hover-raise">
-              <a id='archive' href="#" class="nav-link-a flex-column-align-center">
+            <li class="nav-link hidden function-hover-line">
+              <a id='archive' title='Archive' href="#" class="nav-link-a flex-column-align-center">
                 <i class="iconify" data-icon="icon-park-outline:movie"></i>
-                Archive
               </a>
             </li>
-            <li class="nav-link hidden function-hover-raise">
-              <a id='create' href="#" class="nav-link-a flex-column-align-center">
+            <li class="nav-link hidden function-hover-line">
+              <a id='create' href="#" title='Create' class="nav-link-a flex-column-align-center">
                 <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
-                Create
               </a>
             </li>
-            <li class="nav-link hidden function-hover-raise">
-              <a id='home' href="home.html" class="nav-link-a flex-column-align-center">
+            <li class="nav-link hidden function-hover-line">
+              <a id='home' href="home.html" title='Home' class="nav-link-a flex-column-align-center">
                 <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
-                Home
               </a>
             </li>
-            <li  id='login' class="nav-link hidden function-hover-raise">
-              <a href="signup.html" class="nav-link-a flex-column-align-center">
+            <li  class="nav-link hidden function-hover-line">
+              <a id='login' href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
                 <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
-                Login
               </a>
             </li>
           </ul>
@@ -91,7 +86,7 @@
       </div>
     </div>
   </header>
-    <main class="main-container">
+<main class="main-container">
       <div class="container">
         <header class="main-container-title">
           <h1>Home</h1>
@@ -122,7 +117,7 @@
               <a href="day-at-museum.html" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/mann-looking-at-paintings.jpg"
+                  src='/uploads/mann-looking-at-paintings.jpg'
                   alt="mann looking at paintings"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -162,7 +157,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/gas-station.jpg"
+                  src='/uploads/gas-station.jpg'
                   alt="a gas station in orange and blue light"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -203,7 +198,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/closeup-camera.jpg"
+                  src='/uploads/closeup-camera.jpg'
                   alt="closeup picture of a camera"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -244,7 +239,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/woman-washingmachines.jpg"
+                  src='/uploads/woman-washingmachines.jpg'
                   alt="woman sitting in front of washing machines"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -285,7 +280,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img//woman-standing-position.jpg"
+                  src='/uploads//woman-standing-position.jpg'
                   alt="woman standing in front of tree"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -325,7 +320,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/stairs.jpg"
+                  src='/uploads/stairs.jpg'
                   alt="red stairs"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -369,7 +364,7 @@
               <a href="day-at-museum.html" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/mann-looking-at-paintings.jpg"
+                  src='/uploads/mann-looking-at-paintings.jpg'
                   alt="mann looking at paintings"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -409,7 +404,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/gas-station.jpg"
+                  src='/uploads/gas-station.jpg'
                   alt="a gas station in orange and blue light"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -450,7 +445,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/closeup-camera.jpg"
+                  src='/uploads/closeup-camera.jpg'
                   alt="closeup picture of a camera"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -491,7 +486,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/woman-washingmachines.jpg"
+                  src='/uploads/woman-washingmachines.jpg'
                   alt="woman sitting in front of washing machines"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -532,7 +527,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img//woman-standing-position.jpg"
+                  src='/uploads//woman-standing-position.jpg'
                   alt="woman standing in front of tree"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -572,7 +567,7 @@
               <a href="#" class="function-hover-raise"
                 ><img
                 class="film-card-img"
-                  src="/img/stairs.jpg"
+                  src='/uploads/stairs.jpg'
                   alt="red stairs"
               /></a>
               <div class="shortfilm-info-rent-review-text">
@@ -597,7 +592,7 @@
                 <div class="shortfilm-review-info">
                   <img
                     class="shortfilm-review-img"
-                    src="/img/matthew-brown.jpg"
+                    src='/uploads/matthew-brown.jpg'
                     alt="filmmaker mia nilsen"
                 /><p>
                     <b>Matthew Brown</b> 
@@ -612,7 +607,7 @@
                   <a href="#" class="function-hover-raise"
                   ><img
                   class="film-card-review-img"
-                    src="/img/mann-looking-at-paintings.jpg"
+                    src='/uploads/mann-looking-at-paintings.jpg'
                     alt="mann looking at paintings"
                 /></a></div>
               </article>
@@ -620,7 +615,7 @@
                 <div class="shortfilm-review-info">
                   <img
                     class="shortfilm-review-img"
-                    src="/img/matthew-brown.jpg"
+                    src='/uploads/matthew-brown.jpg'
                     alt="filmmaker mia nilsen"
                 /><p>
                     <b>Matthew Brown</b> 
@@ -635,7 +630,7 @@
                   <a href="#" class="function-hover-raise"
                   ><img
                   class="film-card-review-img"
-                    src="/img/mann-looking-at-paintings.jpg"
+                    src='/uploads/mann-looking-at-paintings.jpg'
                     alt="mann looking at paintings"
                 /></a></div>
               </article>
@@ -643,7 +638,7 @@
                 <div class="shortfilm-review-info">
                   <img
                     class="shortfilm-review-img"
-                    src="/img/matthew-brown.jpg"
+                    src='/uploads/matthew-brown.jpg'
                     alt="filmmaker mia nilsen"
                 /><p>
                     <b>Matthew Brown</b> 
@@ -658,7 +653,7 @@
                   <a href="#" class="function-hover-raise"
                   ><img
                   class="film-card-review-img"
-                    src="/img/mann-looking-at-paintings.jpg"
+                    src='/uploads/mann-looking-at-paintings.jpg'
                     alt="mann looking at paintings"
                 /></a></div>
               </article>
@@ -666,7 +661,7 @@
                 <div class="shortfilm-review-info">
                   <img
                     class="shortfilm-review-img"
-                    src="/img/matthew-brown.jpg"
+                    src='/uploads/matthew-brown.jpg'
                     alt="filmmaker mia nilsen"
                 /><p>
                     <b>Matthew Brown</b> 
@@ -681,7 +676,7 @@
                   <a href="#" class="function-hover-raise"
                   ><img
                   class="film-card-review-img"
-                    src="/img/mann-looking-at-paintings.jpg"
+                    src='/uploads/mann-looking-at-paintings.jpg'
                     alt="mann looking at paintings"
                 /></a></div>
               </article>
@@ -689,7 +684,7 @@
                 <div class="shortfilm-review-info">
                   <img
                     class="shortfilm-review-img"
-                    src="/img/matthew-brown.jpg"
+                    src='/uploads/matthew-brown.jpg'
                     alt="filmmaker mia nilsen"
                 /><p>
                     <b>Matthew Brown</b> 
@@ -704,7 +699,7 @@
                   <a href="#" class="function-hover-raise"
                   ><img
                   class="film-card-review-img"
-                    src="/img/mann-looking-at-paintings.jpg"
+                    src='/uploads/mann-looking-at-paintings.jpg'
                     alt="mann looking at paintings"
                 /></a></div>
               </article>
@@ -712,40 +707,40 @@
         </section>
       </div>
     </main>
-    <footer class="primary-footer">
-      <div class="container">
-        <div class="primary-footer-items flex-column-align-center">
-          <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-            <a title='Not in use' href="#" class="nav-link function-hover-raise">Our Policy</a>
-            <a title='Not in use' href="#" class="nav-link function-hover-raise">About Us</a>
-            <a title='Not in use' href="#" class="nav-link function-hover-raise">Contact Us</a>
-            <a title='Not in use' href="#" class="nav-link function-hover-raise">FAQ</a>
-          </nav>
-          <div class="primary-footer-item-download-secure flex-column-align-center">
-            <img
-              class="primary-footer-item-download-img"
-              src="/img/download-android-ios.png"
-              alt="download google-play apple-store"
-              width='200px'
-              height='auto'
-            />
-            <img
-              class="primary-footer-item-secure-img"
-              src="/img/secure-payment.png"
-              alt="secure payment"
-              width='200px'
-              height='auto'
-            />
-          </div>
-          <small>
-            © 2021 Linda Sandaker. For educational purposes. <br/>
-            The beautiful photos are from
-            <a class='function-hover-raise' href="https://unsplash.com" target="blank"
-            ><b>Unsplash.com</b>
-            </a>
-          </small>
+<footer class="primary-footer">
+    <div class="container">
+      <div class="primary-footer-items flex-column-align-center">
+        <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
+          <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
+          <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
+          <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
+          <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
+        </nav>
+        <div class="primary-footer-item-download-secure flex-column-align-center">
+          <img
+            class="primary-footer-item-download-img"
+            src='/uploads/download-android-ios.png'
+            alt="download google-play apple-store"
+            width='200px'
+            height='auto'
+          />
+          <img
+            class="primary-footer-item-secure-img"
+            src='/uploads/secure-payment.png'
+            alt="secure payment"
+            width='200px'
+            height='auto'
+          />
         </div>
+        <small>
+          © 2021 Linda Sandaker. For educational purposes. <br/>
+          The beautiful photos are from
+          <a class='function-hover-line' href="https://unsplash.com" target="blank"
+          ><b>Unsplash.com</b>
+          </a>
+        </small>
       </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+</body>
 </html>

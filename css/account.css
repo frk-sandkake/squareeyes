@@ -1,155 +1,26 @@
-.main-container {
-  background: var(--color-darkest-blue);
-  margin: 1rem;
-  border-radius: 0.5rem;
+.main-items-account-form {
+  gap: 3rem;
 }
 
-.main-container-title {
-  padding: 1rem;
+.main-item-form {
+  gap: 3rem;
 }
 
-.main-container-item-profile-picture {
-  display: flex;
+.account-form-personal-details,
+.account-form-about-me {
   flex-direction: column;
-  align-items: center;
-  margin-bottom: 3rem;
+  gap: 1rem;
+  width: 90%;
 }
 
-#profile-picture {
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 50%;
+.form-radio-btns {
+  justify-content: flex-start;
+  gap: 1.5rem;
 }
 
-#label-profile-picture {
-  text-align: center;
-}
-
-.main-container-item-about-me-radio-button {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.5rem 0 0.5rem 0;
-}
-
-.main-container-item-about-me {
-  width: 100%;
-  height: auto;
-  margin: auto;
-  padding-bottom: 1rem;
-}
-
-.main-container-items-favorite-genres {
-  display: flex;
+.account-form-favorite-genres {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  padding: 0.5rem 0 0.5rem 0;
-  width: 100%;
+  gap: .1rem;
 }
-
-.favorite-genres {
-  position: relative;
-  height: 1.5rem;
-  margin: 0 0.2rem 0.2rem 0.2rem;
-  font-size: 0.6rem;
-  color: var(--color-lightest-blue);
-  border-radius: 3rem;
-  border: 1px solid var(--color-lightest-blue);
-}
-
-.favorite-genres span {
-  padding: 0 0.3rem 0 0.3rem;
-  cursor: pointer;
-}
-
-.favorite-genres div {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s ease;
-}
-
-.favorite-genres input {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 3rem;
-  opacity: 0; /*hides the ordinary checkbox*/
-  cursor: pointer;
-}
-
-input[type='checkbox']:checked ~ div {
-  background: var(--color-darkest-yellow);
-  border-radius: 2rem;
-}
-
-.main-container-items-personal-data {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 3rem;
-}
-
-/**MEDIA QUERIES min 768px*/
-@media screen and (min-width: 768px) {
-  .main-container {
-    margin: 3rem 7rem 3rem 7rem;
-    padding: 1rem 0 1rem 0;
-  }
-
-  .main-container-title {
-    margin: auto;
-    width: 90%;
-  }
-
-  .main-container-item-about-me {
-    width: 70%;
-  }
-
-  .main-container-item-about-me-radio-button,
-  .main-container-items-favorite-genres {
-    padding: 1rem 0 1rem 0;
-  }
-
-  .favorite-genres {
-    font-size: 0.8rem;
-  }
-}
-/**MEDIA QUERIES min 768px END*/
-
-/**MEDIA QUERIES min 1024px*/
-@media screen and (min-width: 1024px) {
-  .main-container-title {
-    width: 80%;
-  }
-
-  .main-container-items-personal-data {
-    width: 80%;
-  }
-}
-/**MEDIA QUERIES min 1024px END*/
-
-/**MEDIA QUERIES min 1440px*/
-@media screen and (min-width: 1440px) {
-  .main-container {
-    margin: 3rem 14rem 3rem 14rem;
-    padding: 1rem 0 1rem 0;
-  }
-
-  .main-container-title {
-    width: 70%;
-  }
-
-  .main-container-item-about-me {
-    width: 60%;
-  }
-
-  .main-container-items-personal-data {
-    width: 60%;
-  }
-}
-/**MEDIA QUERIES min 1440px END*/

@@ -9,7 +9,7 @@
   padding: .2rem 1rem;
 }
 
-.primary-navigation-ul {
+.primary-navigation-ul li {
   justify-content: space-between;
   gap: 1rem;
 }
@@ -17,6 +17,7 @@
 .nav-link {
   overflow: hidden;
   white-space: nowrap;
+  padding: 0 .5rem;
   transition: 0.8s ease-in-out;
 }
 
@@ -29,16 +30,18 @@
 .primary-footer {
   width: 100%;
   height: auto;
-  padding: 1rem 1rem 15rem;
+  padding: 3rem 1rem;
 }
 
 .primary-footer-items,
 .primary-footer-item-download-secure{
+  width: 100%;
   justify-content: space-evenly;
   gap: 2rem;
 }
 
 .secondary-navigation {
+  width: 100%;
   justify-content: space-between;
   gap: 1rem;
 }
@@ -47,8 +50,8 @@ small a {
   font-size: clamp(.6rem, 1vw, 1rem);
 }
 
-@media screen and (max-width: 767px) {
-  /* || Bottom navigation */
+/* @media screen and (max-width: 767px) {
+ || Bottom navigation
   .primary-navigation-ul {
     position: fixed;
     justify-content: center;
@@ -61,3 +64,4 @@ small a {
     overflow-x: auto;
   }
 }
+*/

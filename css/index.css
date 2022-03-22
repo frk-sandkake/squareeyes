@@ -24,3 +24,8 @@
   width: 100%;
   text-align: center;
 }
+
+/* || Navigation */
+#archive, #create, #home {
+  display: none;
+}

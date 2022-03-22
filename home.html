@@ -44,48 +44,47 @@
   </head>
 <body>
 <header class="primary-header">
-    <div class="container">
-      <div class="primary-header-items flex">
-        <a href='index.html' class='logo'>
-          <img
-            title='SquareEyes the shortfilm site that connects film-lovers'
-            src="./uploads/squareeyes-logo.svg"
-            alt="logo: Rectangle with brand name, slogan and camera-role"
-          />
-        </a>
-        <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
-          <ul class="primary-navigation-ul flex-row-align-center">
-            <li class="nav-link function-hover-line">
-              <a id='search' title='Search' href="#" class="nav-link-a flex-column-align-center">
-                <i class="iconify" data-icon="fluent:search-12-filled"></i>
-
-              </a>
-            </li>
-            <li class="nav-link hidden function-hover-line">
-              <a id='archive' title='Archive' href="#" class="nav-link-a flex-column-align-center">
-                <i class="iconify" data-icon="icon-park-outline:movie"></i>
-              </a>
-            </li>
-            <li class="nav-link hidden function-hover-line">
-              <a id='create' href="#" title='Create' class="nav-link-a flex-column-align-center">
-                <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
-              </a>
-            </li>
-            <li class="nav-link hidden function-hover-line">
-              <a id='home' href="home.html" title='Home' class="nav-link-a flex-column-align-center">
-                <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
-              </a>
-            </li>
-            <li  class="nav-link hidden function-hover-line">
-              <a id='login' href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
-                <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+  <div class="container">
+    <div class="primary-header-items flex">
+      <a href='index.html' class='logo'>
+        <img
+          title='SquareEyes the shortfilm site that connects film-lovers'
+          src="./uploads/squareeyes-logo.svg"
+          alt="logo: Rectangle with brand name, slogan and camera-role"
+        />
+      </a>
+      <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
+        <ul class="primary-navigation-ul flex-row-align-center">
+          <li id='search' class="nav-link function-hover-line">
+            <a title='Search' href="#" class="nav-link-a flex-column-align-center">
+              <i class="iconify" data-icon="fluent:search-12-filled"></i>
+            </a>
+          </li>
+          <li id='archive' class="nav-link function-hover-line">
+            <a title='Archive' href="#" class="nav-link-a flex-column-align-center">
+              <i class="iconify" data-icon="icon-park-outline:movie"></i>
+            </a>
+          </li>
+          <li id='create' class="nav-link function-hover-line">
+            <a href="#" title='Create' class="nav-link-a flex-column-align-center">
+              <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
+            </a>
+          </li>
+          <li id='home' class="nav-link function-hover-line">
+            <a href="account-settings.html" title='account settings' class="nav-link-a flex-column-align-center">
+              <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
+            </a>
+          </li>
+          <li id='login' class="nav-link function-hover-line">
+            <a href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
+              <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
     </div>
-  </header>
+  </div>
+</header>
 <main class="main-container">
       <div class="container">
         <header class="main-container-title">
@@ -708,39 +707,33 @@
       </div>
     </main>
 <footer class="primary-footer">
-    <div class="container">
-      <div class="primary-footer-items flex-column-align-center">
-        <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-          <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
-          <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
-          <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
-          <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
-        </nav>
-        <div class="primary-footer-item-download-secure flex-column-align-center">
-          <img
-            class="primary-footer-item-download-img"
-            src='/uploads/download-android-ios.png'
-            alt="download google-play apple-store"
-            width='200px'
-            height='auto'
-          />
-          <img
-            class="primary-footer-item-secure-img"
-            src='/uploads/secure-payment.png'
-            alt="secure payment"
-            width='200px'
-            height='auto'
-          />
+  <div class="container">
+    <div class="primary-footer-items flex-column-align-center">
+      <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
+        <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
+        <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
+        <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
+        <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
+      </nav>
+      <div class="primary-footer-item-download-secure flex-column-align-center">
+        <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">
+          <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" width="200" alt="google play and apple app store logos" /></a>
+        <div class='secure-payment flex-row-align-center'>
+          <i class="iconify" data-icon="ri:secure-payment-fill"></i>
+          <i class="iconify" data-icon="cib:paypal"></i>
+          <i class="iconify" data-icon="cib:cc-visa"></i>
+          <i class="iconify" data-icon="cib:cc-mastercard"></i>
         </div>
-        <small>
-          © 2021 Linda Sandaker. For educational purposes. <br/>
-          The beautiful photos are from
-          <a class='function-hover-line' href="https://unsplash.com" target="blank"
-          ><b>Unsplash.com</b>
-          </a>
-        </small>
       </div>
+      <small>
+        © 2021 Linda Sandaker. For educational purposes. <br/>
+        The beautiful photos are from
+        <a class='function-hover-line' href="https://unsplash.com" target="blank"
+        ><b>Unsplash.com</b>
+        </a>
+      </small>
     </div>
-  </footer>
+  </div>
+</footer>
 </body>
 </html>

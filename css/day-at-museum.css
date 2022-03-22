@@ -6,7 +6,6 @@
 }
 
 .main-container-items-film-page {
-  background: var(--color-dark-blue);
   margin: 0.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
@@ -43,7 +42,6 @@
 
 .shortfilm-page small {
   opacity: 70%;
-  color: var(--color-lightest-blue);
 }
 
 .shortfilm-play-settings {
@@ -52,7 +50,6 @@
   justify-content: space-between;
   align-items: center;
   height: 3rem;
-  background: var(--color-darkest-blue);
 }
 
 .shortfilm-info-rent-review {
@@ -63,7 +60,6 @@
 }
 
 .main-container-item-about-filmmaker {
-  border: 6px solid var(--color-dark-blue);
   border-radius: 0.5rem;
   margin: 2.5rem 0.5rem 2.5rem 0.5rem;
   padding: 0.5rem;
@@ -134,3 +130,9 @@
     }
   }
   /**MEDIA QUERIES min 1440px END*/
+
+
+/* || Navigation */
+#login {
+  display: none;
+}

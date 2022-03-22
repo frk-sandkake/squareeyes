@@ -17,6 +17,8 @@
   />
   <link rel="stylesheet" href="/css/styles.css" />
   <link rel="stylesheet" href="/css/header-footer.css" />
+  <link rel="stylesheet" href="/css/pay-page.css" />
+  <link rel="stylesheet" href="/css/account.css" />
   <link rel="stylesheet" href="/css/index.css" />
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -39,6 +41,7 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+  <script src='/js/script.js' defer></script>
 </head>
 <body id='body'>
 <p><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
@@ -54,28 +57,28 @@
       </a>
       <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
         <ul class="primary-navigation-ul flex-row-align-center">
-          <li class="nav-link function-hover-line">
-            <a id='search' title='Search' href="#" class="nav-link-a flex-column-align-center">
+          <li id='search' class="nav-link function-hover-line">
+            <a title='Search' href="#" class="nav-link-a flex-column-align-center">
               <i class="iconify" data-icon="fluent:search-12-filled"></i>
             </a>
           </li>
-          <li class="nav-link hidden function-hover-line">
-            <a id='archive' title='Archive' href="#" class="nav-link-a flex-column-align-center">
+          <li id='archive' class="nav-link function-hover-line">
+            <a title='Archive' href="#" class="nav-link-a flex-column-align-center">
               <i class="iconify" data-icon="icon-park-outline:movie"></i>
             </a>
           </li>
-          <li class="nav-link hidden function-hover-line">
-            <a id='create' href="#" title='Create' class="nav-link-a flex-column-align-center">
+          <li id='create' class="nav-link function-hover-line">
+            <a href="#" title='Create' class="nav-link-a flex-column-align-center">
               <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
             </a>
           </li>
-          <li class="nav-link hidden function-hover-line">
-            <a id='home' href="home.html" title='Home' class="nav-link-a flex-column-align-center">
+          <li id='home' class="nav-link function-hover-line">
+            <a href="home.html" title='Home' class="nav-link-a flex-column-align-center">
               <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
             </a>
           </li>
-          <li  class="nav-link hidden function-hover-line">
-            <a id='login' href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
+          <li id='login' class="nav-link function-hover-line">
+            <a href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
               <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
             </a>
           </li>
@@ -100,7 +103,37 @@
           Free films and films to rent for a nice price. <br/>
           Upload your shortfilms, read and write reviews, all with ease.
         </p>
-        <button class="btn-primary btn-mobile function-hover-raise"><a href='signup.html'>Sign up for free!</a></button>
+
+        <!-- Trigger/Open The Modal -->
+        <button id='btn-modal' class="btn-primary btn-mobile function-hover-raise">Sign up for free!</button>
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <section class='modal-sign-up flex'>
+              <form action="#" method="post" class='main-item-form flex-column-align-center'>
+                <fieldset class='payment-fieldset flex'>
+                  <legend class='header-h2'>Sign up!</legend>
+                  <div class='form-control flex'>
+                    <label for='name' class='header-h3'>Full name</label>
+                    <input id='name' type='text' name='name' title='Please enter name on the card'>
+                  </div>
+                  <div class='form-control flex'>
+                    <label for="email" class="header-h3">Email</label>
+                    <input  id="email" type="email"  title='Please enter your email address'
+                            name="email" placeholder="your@email.com">
+                  </div>
+                  <input type='submit'class='btn-primary' value='Sign up' >
+                  <p><a href="account-settings.html" id="to-account-settings-page" class="function-hover-line">Go to account settings</a></p>
+                </fieldset>
+              </form>
+            </section>
+          </div>
+
+        </div>
         <small>
           Filmmakers get 70 % of the revenue!
         </small>
@@ -112,34 +145,28 @@
 <footer class="primary-footer">
   <div class="container">
     <div class="primary-footer-items flex-column-align-center">
-      <nav id="secondary-nav" class="secondary-navigation flex-row-align-center">
+      <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
         <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
         <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
         <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
         <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
       </nav>
       <div class="primary-footer-item-download-secure flex-column-align-center">
-          <img
-            class="primary-footer-item-download-img"
-            src='/uploads/download-android-ios.png'
-            alt="download google-play apple-store"
-            width='200px'
-            height='auto'
-          />
-          <img
-            class="primary-footer-item-secure-img"
-            src='/uploads/secure-payment.png'
-            alt="secure payment"
-            width='200px'
-            height='auto'
-          />
+        <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">
+          <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" width="200" alt="google play and apple app store logos" /></a>
+        <div class='secure-payment flex-row-align-center'>
+          <i class="iconify" data-icon="ri:secure-payment-fill"></i>
+          <i class="iconify" data-icon="cib:paypal"></i>
+          <i class="iconify" data-icon="cib:cc-visa"></i>
+          <i class="iconify" data-icon="cib:cc-mastercard"></i>
+        </div>
       </div>
       <small>
-          © 2021 Linda Sandaker. For educational purposes. <br/>
-          The beautiful photos are from
-          <a class='function-hover-line' href="https://unsplash.com" target="blank"
-          ><b>Unsplash.com</b>
-          </a>
+        © 2021 Linda Sandaker. For educational purposes. <br/>
+        The beautiful photos are from
+        <a class='function-hover-line' href="https://unsplash.com" target="blank"
+        ><b>Unsplash.com</b>
+        </a>
       </small>
     </div>
   </div>

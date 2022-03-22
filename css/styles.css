@@ -34,6 +34,7 @@ body {
 
 main {
     margin: 0 auto;
+    padding: 2rem .5rem;
 }
 
 h1, h2, .header-h2, h3, .header-h3, h4 {
@@ -81,7 +82,7 @@ small {
 }
 
 /* || a - li- buttons - form */
-a, button {
+a, li, button {
     font-family: var(--ff-label-nav-btn-txt);
     font-size: clamp(1rem, 3vw, 1.3rem);
     padding-bottom: .5rem;
@@ -113,7 +114,8 @@ li {
     cursor: pointer;
 }
 
-.btn-primary a, a input[type=submit] {
+.btn-primary a, input[type=submit] {
+    font-family: var(--ff-label-nav-btn-txt);
     color: var(--clr-dark-blue);
     text-transform: uppercase;
 }
@@ -160,16 +162,18 @@ li {
 
 fieldset {
     border: none;
-    padding: 1rem;
+    padding: 2rem 1rem;
 }
 
 .form-control {
     flex-direction: row;
-    gap: 0;
+    gap: .5rem;
 }
 
 input {
+    width: 70%;
     border: 0;
+    text-align: center;
     border-bottom: .01rem solid var(--clr-cyan);
     background: var(--clr-dark-yellow);
     color: var(--clr-light-mint);
@@ -185,6 +189,25 @@ textarea {
 }
 
 /* || Utility's */
+ul.breadcrumb li {
+    display: inline;
+    font-size: .9rem;
+    color: var(--clr-yellow);
+}
+
+ul.breadcrumb li a {
+    font-size: .8rem;
+}
+
+ul.breadcrumb li+li:before {
+    padding: .2rem;
+    content:  "/\00a0";
+}
+
+.access_aid {
+    font-size: .8rem;
+}
+
 .flex {
     display: flex;
 }
@@ -204,7 +227,7 @@ textarea {
 .function-hover-raise:hover,
 .function-hover-raise:focus {
     box-shadow: 0 0.8rem 0.8rem -0.2rem rgba(251, 255, 143, 0.91);
-    transform: translateY(-0.25em);
+    transform: translateY(-0.1rem);
 }
 
 .function-hover-line {
@@ -233,7 +256,7 @@ textarea {
 
 .function-hover-line:focus,
 .function-hover-line:active {
-    border-bottom: 1px solid var(--clr-yellow);
+    text-decoration: 1px solid var(--clr-yellow);
 }
 
 .function-hover-background {
@@ -264,3 +287,4 @@ textarea {
 .function-hover-background:active {
     background-image: var(--clr-lin-grad-green);
 }
+

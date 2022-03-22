@@ -1,14 +1,8 @@
-.main-container {
-  background: var(--color-darkest-blue);
-  padding: 1rem;
-  margin: auto;
-}
 
 .main-container-items-films-overview {
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: var(--color-darkest-blue);
   margin: 1rem;
   padding: 1rem;
   width: 160px;
@@ -73,7 +67,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  background: var(--color-darkest-blue);
   border-radius: 0.5rem;
   margin: 0.5rem;
   padding: 0.5rem;
@@ -119,3 +112,9 @@
   }
 }
 /**MEDIA QUERIES min 1440px END*/
+
+
+/* || Navigation */
+#login {
+  display: none;
+}

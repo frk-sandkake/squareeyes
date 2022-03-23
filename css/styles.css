@@ -32,11 +32,6 @@ body {
     margin: 0 auto;
 }
 
-main {
-    margin: 0 auto;
-    padding: 2rem .5rem;
-}
-
 h1, h2, .header-h2, h3, .header-h3, h4 {
     font-family: var(--ff-headings);
 }

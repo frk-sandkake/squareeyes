@@ -1,5 +1,4 @@
-
-.main-container-items-films-overview {
+.main-film-section {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -90,29 +89,6 @@
   width: 100px;
   height: 100px;
 }
-
-/**MEDIA QUERIES min 768px*/
-@media screen and (min-width: 768px) {
-  .main-container-items {
-    padding: 0 3rem 3rem 3rem;
-  }
-}
-/**MEDIA QUERIES min 768px END*/
-
-/**MEDIA QUERIES min 1024px*/
-@media screen and (min-width: 1024px) {
-}
-/**MEDIA QUERIES min 1024px END*/
-
-/**MEDIA QUERIES min 1440px
-@media screen and (min-width: 1440px) {
-  .main-container-items {
-    margin: 3rem 14rem 3rem 14rem;
-    padding: 1rem 0 1rem 0;
-  }
-}
-/**MEDIA QUERIES min 1440px END*/
-
 
 /* || Navigation */
 #login {

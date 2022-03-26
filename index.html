@@ -16,20 +16,11 @@
     rel='stylesheet'
   />
   <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href="/css/header-footer.css" />
-  <link rel="stylesheet" href="/css/pay-page.css" />
-  <link rel="stylesheet" href="/css/account.css" />
+  <link rel="stylesheet" href='/css/header-footer.css' />
+  <link rel="stylesheet" href='/css/modal.css' />
+  <link rel="stylesheet" href='/css/form.css' />
   <link rel="stylesheet" href="/css/index.css" />
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTM3VJ49CR"></script>
-  <script>
-  window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-XTM3VJ49CR');
-  </script>
   <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
   <script>
     (function(h,o,t,j,a,r){
@@ -44,7 +35,7 @@
   <script src='/js/script.js' defer></script>
 </head>
 <body id='body'>
-<p><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
+<p><a href="#primary_nav" id="access_nav" aria-readonly='true' class="access_aid">Skip to navigation</a></p>
 <header class="primary-header">
   <div class="container">
     <div class="primary-header-items flex">
@@ -92,52 +83,45 @@
     <section class="main-items-introduction flex-column-align-center">
       <h1 class='site-title'>SQUARE EYES</h1>
       <div class='subtitle' role='doc-subtitle'>CONNECTING CINÉPHILES</div>
-      <img
-        class="main-item-video"
-        src='/uploads/info-video.jpg'
-        alt="info-video"
-      />
-      <aside class="main-item-text-btn-sign-up flex-column-align-center">
+      <img class="main-item-video" src='/uploads/info-video.jpg' alt="info-video" />
         <p>
           Follow filmmakers and cinéphiles. <br/>
           Free films and films to rent for a nice price. <br/>
           Upload your shortfilms, read and write reviews, all with ease.
         </p>
-
-        <!-- Trigger/Open The Modal -->
-        <button id='btn-modal' class="btn-primary btn-mobile function-hover-raise">Sign up for free!</button>
-
-        <!-- The Modal -->
-        <div id="myModal" class="modal">
-
-          <!-- Modal content -->
-          <div class="modal-content">
+        <button id='btnModal' class="btn-primary">Sign up</button>
+        <small>Filmmakers get 70 % of the revenue!</small>
+        <div id="signUpModal" class="modal">
+          <div class="modal-content flex-column-align-center">
             <span class="close">&times;</span>
-            <section class='modal-sign-up flex'>
-              <form action="#" method="post" class='main-item-form flex-column-align-center' netlify>
-                <fieldset class='payment-fieldset flex'>
-                  <legend class='header-h2'>Sign up!</legend>
-                  <div class='form-control flex'>
-                    <label for='name' class='header-h3'>Full name</label>
-                    <input id='name' type='text' name='name' title='Please enter name on the card'>
-                  </div>
-                  <div class='form-control flex'>
-                    <label for="email" class="header-h3">Email</label>
-                    <input  id="email" type="email"  title='Please enter your email address'
-                            name="email" placeholder="your@email.com">
-                  </div>
-                  <input type='submit'class='btn-primary' value='Sign up' >
-                  <p><a href="account-settings.html" id="to-account-settings-page" class="function-hover-line">Go to account settings</a></p>
-                </fieldset>
-              </form>
-            </section>
+            <form action="#" class='main-item-form flex-column-align-center' data-netlify='true'>
+              <fieldset class='sign-up-fieldset flex'>
+                <legend class='header-h2'>Sign up to SquareEyes</legend>
+                <div class='form-control flex'>
+                  <label for="email" class="header-h3">Email</label>
+                  <input id="email" type="email" title='Please enter your email address'
+                         name="email" placeholder="your@email.com">
+                </div>
+                <div class='form-control flex'>
+                  <label for="password" class="header-h3">password</label>
+                  <input id="password" type="password" title='Please enter a password'
+                         name="password" placeholder="">
+                </div>
+              </fieldset>
+              <div class='alert__container'>
+                <h2>Welcome to SquareEyes!</h2>
+                <p>The best place for filmmakers and cinéphiles! <br>
+                Please tell us something about yourself..
+                </p>
+                <a href="account-settings.html" class="link-icon flex">
+                  To profile settings
+                  <i class="iconify" data-icon="akar-icons:arrow-right"></i>
+                </a>
+              </div>
+              <input id="successMessage" name='submit' type='submit' class='btn-primary' value='Sign up'>
+            </form>
           </div>
-
         </div>
-        <small>
-          Filmmakers get 70 % of the revenue!
-        </small>
-      </aside>
     </section>
     <p><a href="#body" id="access_top" class="access_aid">Skip to top</a></p>
   </div>
@@ -146,10 +130,9 @@
   <div class="container">
     <div class="primary-footer-items flex-column-align-center">
       <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-        <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
+        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">About Us</a>
+        <a title='Contact page' href="contact-us.html" class="nav-link-a function-hover-line function-focus-active">Contact Us</a>
+        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">FAQ</a>
       </nav>
       <div class="primary-footer-item-download-secure flex-column-align-center">
         <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">

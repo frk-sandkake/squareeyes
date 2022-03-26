@@ -18,8 +18,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href="/css/header-footer.css" />
-    <link rel="stylesheet" href="/css/account.css" />
+    <link rel="stylesheet" href='/css/header-footer.css' />
+    <link rel="stylesheet" href='/css/form.css' />
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTM3VJ49CR"></script>
@@ -86,129 +86,141 @@
     </div>
   </div>
 </header>
-<main class="main-account-settings">
-      <div class="container">
-        <section class="main-items-account-form flex-column-align-center">
-          <h1>About Me</h1>
-          <form action="#" method="post" class='main-item-form flex-column-align-center' netlify>
-            <!-- Personal details -->
-            <fieldset class="account-fieldset flex">
-              <legend class="header-h2">
-                Personal details:
-              </legend>
-              <div class='form-control flex'>
-                <label for='image' class='header-h3'>Avatar</label>
-                <input id='image' type='file' name='profile_photo' >
-              </div>
-              <div class='form-control flex'>
-                <label for='name' class='header-h3'>Full name</label>
-                <input id='name' type='text' name='name' title='Please enter your full name'>
-              </div>
-              <div class='form-control flex'>
-                <label for='date-of-birth' class='header-h3'>Date of Birth</label>
-                <input id='date-of-birth' type='date' name='date-of-birth' title='Please enter your date of birth'>
-              </div>
-              <div class='form-control flex'>
-                <label for='country' class='header-h3'>Country</label>
-                <input id='country' type='text' name='country' placeholder='' title='Please enter the country you live in'>
-              </div>
-            </fieldset>
-            <!-- About Me -->
-            <fieldset class="account-fieldset flex">
-              <legend class="header-h2">
-                About me
-              </legend>
-              <div class="form-radio-btns flex-row-align-center">
-                <h3 class='header-h3'>I'm a:</h3>
-                <label for='filmmaker' class='radio-btn flex-column-align-center'>Filmmaker
-                <input id='filmmaker' type='radio' name='select-radio' >
-                </label>
-                <label for='cinéphile' class='radio-btn flex-column-align-center'>Cinéphile
-                <input id='cinéphile' type='radio' name='select-radio' >
-                </label>
-                <label for='both' class='radio-btn flex-column-align-center'>Both
-                <input id='both' type='radio' name='select-radio' >
-                </label>
-              </div>
-              <label for="my-bio" class="header-h3">My Bio</label>
-              <textarea id="my-bio" class="my-bio-textarea" name="my-bio" cols="10" rows="5"></textarea>
-              <div class="account-form-favorite-genres checkbox-btns flex">
-                <label for='action' class='checkbox-btn-label function-hover-raise'>action
-                  <input id="action" type='checkbox' class='checkbox-btn-input' name='action' />
-                  <span class='checkmark flex'>action</span>
-                </label>
-                <label for='adventure' class='checkbox-btn-label function-hover-raise'>adventure
-                  <input id="adventure" type='checkbox' class='checkbox-btn-input' name='adventure' />
-                  <span class='checkmark flex'>adventure</span>
-                </label>
-                <label for='biography' class='checkbox-btn-label function-hover-raise'>biography
-                  <input id="biography" type='checkbox' class='checkbox-btn-input' name='biography' />
-                  <span class='checkmark flex'>biography</span>
-                </label>
-                <label for='comedy' class='checkbox-btn-label function-hover-raise'>comedy
-                  <input id="comedy" type='checkbox' class='checkbox-btn-input' name='comedy' />
-                  <span class='checkmark flex'>comedy</span>
-                </label>
-                <label for='crime' class='checkbox-btn-label function-hover-raise'>crime
-                  <input id="crime" type='checkbox' class='checkbox-btn-input' name='crime' />
-                  <span class='checkmark flex'>crime</span>
-                </label>
-                <label for='drama' class='checkbox-btn-label function-hover-raise'>drama
-                  <input id="drama" type='checkbox' class='checkbox-btn-input' name='drama' />
-                  <span class='checkmark flex'>drama</span>
-                </label>
-                <label for='experimental' class='checkbox-btn-label function-hover-raise'>experimental
-                  <input id="experimental" type='checkbox' class='checkbox-btn-input' name='experimental' />
-                  <span class='checkmark flex'>experimental</span>
-                </label>
-                <label for='fantasy' class='checkbox-btn-label function-hover-raise'>fantasy
-                  <input id="fantasy" type='checkbox' class='checkbox-btn-input' name='fantasy' />
-                  <span class='checkmark flex'>fantasy</span>
-                </label>
-                <label for='film-noir' class='checkbox-btn-label function-hover-raise'>film noir
-                  <input id="film-noir" type='checkbox' class='checkbox-btn-input' name='film-noir' />
-                  <span class='checkmark flex'>film noir</span>
-                </label>
-                <label for='history' class='checkbox-btn-label function-hover-raise'>history
-                  <input id="history" type='checkbox' class='checkbox-btn-input' name='history' />
-                  <span class='checkmark flex'>history</span>
-                </label>
-                <label for='horror' class='checkbox-btn-label function-hover-raise'>horror
-                  <input id="horror" type='checkbox' class='checkbox-btn-input' name='horror' />
-                  <span class='checkmark flex'>horror</span>
-                </label>
-                <label for='musical' class='checkbox-btn-label function-hover-raise'>musical
-                  <input id="musical" type='checkbox' class='checkbox-btn-input' name='musical' />
-                  <span class='checkmark flex'>musical</span>
-                </label>
-                <label for='romance' class='checkbox-btn-label function-hover-raise'>romance
-                  <input id="romance" type='checkbox' class='checkbox-btn-input' name='romance' />
-                  <span class='checkmark flex'>romance</span>
-                </label>
-                <label for='sci-fi' class='checkbox-btn-label function-hover-raise'>sci-fi
-                  <input id="sci-fi" type='checkbox' class='checkbox-btn-input' name='sci-fi' />
-                  <span class='checkmark flex'>sci-fi</span>
-                </label>
-                <label for='thriller' class='checkbox-btn-label function-hover-raise'>thriller
-                  <input id="thriller" type='checkbox' class='checkbox-btn-input' name='thriller' />
-                  <span class='checkmark flex'>thriller</span>
-                </label>
-              </div>
-            </fieldset>
-            <input type='submit'class='btn-primary' value='Save Changes' >
-            <p><a href="home.html" id="to-home-page" class="function-hover-line">Skip to home page</a></p>
-          </form>
-        </section>
-      </div>
-    </main>
+<main class="main-account__container">
+  <div class="container">
+    <section class="account-items__container flex-column-align-center">
+      <h1>About Me</h1>
+      <form action="#" method="POST" class='account-form flex-column-align-center'>
+        <div class='form-control__photo'>
+          <img id='image' src='/uploads/profile-picture.svg' alt='Icon representing place for a profile picture' >
+          <input id='profile_photo' type='file' name='profile_photo'>
+          <label id='uploadBtn' for='profile_photo' class='header-h3'>Choose Photo</label>
+        </div>
+        <fieldset class="account-fieldset flex">
+          <legend class="header-h2">
+            Personal details:
+          </legend>
+          <div class='form-control__input flex'>
+            <label for='name' class='header-h3'>Full name</label>
+            <input id='name' type='text' name='name' title='Please enter your full name'>
+          </div>
+          <div class='form-control__small flex-row-align-center'>
+            <div class='form-control__input flex'>
+              <label for='date-of-birth' class='header-h3'>Date of Birth</label>
+              <input id='date-of-birth' type='date' name='date-of-birth' title='Please enter your date of birth'>
+            </div>
+            <div class='form-control__input flex'>
+              <label for='country' class='header-h3'>Country</label>
+              <input id='country' type='text' name='country' placeholder='' title='Please enter the country you live in'>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="account-fieldset flex">
+          <legend class="header-h2">
+            About me
+          </legend>
+          <div class="form-radio-btns flex-row-align-center">
+            <h3 class='header-h3'>I'm a:</h3>
+            <label for='filmmaker' class='checkbox-btn-label'>filmmaker
+            <input id='filmmaker' type='radio' name='select-radio' >
+              <span class='checkmark flex'>filmmaker</span>
+            </label>
+            <label for='cinéphile' class='checkbox-btn-label'>cinéphile
+            <input id='cinéphile' type='radio' name='select-radio' >
+              <span class='checkmark flex'>cinéphile</span>
+            </label>
+            <label for='both' class='checkbox-btn-label'>both
+            <input id='both' type='radio' name='select-radio' >
+              <span class='checkmark flex'>both</span>
+            </label>
+          </div>
+          <label for="my-bio" class="header-h3">My Bio</label>
+          <textarea id="my-bio" class="" name="my-bio" cols="10" rows="5"></textarea>
+          <div class="form-checkbox-btns flex">
+            <label for='action' class='checkbox-btn-label function-hover-raise'>action
+              <input id="action" type='checkbox' class='checkbox-btn-input' name='action' />
+              <span class='checkmark flex'>action</span>
+            </label>
+            <label for='adventure' class='checkbox-btn-label function-hover-raise'>adventure
+              <input id="adventure" type='checkbox' class='checkbox-btn-input' name='adventure' />
+              <span class='checkmark flex'>adventure</span>
+            </label>
+            <label for='biography' class='checkbox-btn-label function-hover-raise'>biography
+              <input id="biography" type='checkbox' class='checkbox-btn-input' name='biography' />
+              <span class='checkmark flex'>biography</span>
+            </label>
+            <label for='comedy' class='checkbox-btn-label function-hover-raise'>comedy
+              <input id="comedy" type='checkbox' class='checkbox-btn-input' name='comedy' />
+              <span class='checkmark flex'>comedy</span>
+            </label>
+            <label for='crime' class='checkbox-btn-label function-hover-raise'>crime
+              <input id="crime" type='checkbox' class='checkbox-btn-input' name='crime' />
+              <span class='checkmark flex'>crime</span>
+            </label>
+            <label for='drama' class='checkbox-btn-label function-hover-raise'>drama
+              <input id="drama" type='checkbox' class='checkbox-btn-input' name='drama' />
+              <span class='checkmark flex'>drama</span>
+            </label>
+            <label for='experimental' class='checkbox-btn-label function-hover-raise'>experimental
+              <input id="experimental" type='checkbox' class='checkbox-btn-input' name='experimental' />
+              <span class='checkmark flex'>experimental</span>
+            </label>
+            <label for='fantasy' class='checkbox-btn-label function-hover-raise'>fantasy
+              <input id="fantasy" type='checkbox' class='checkbox-btn-input' name='fantasy' />
+              <span class='checkmark flex'>fantasy</span>
+            </label>
+            <label for='film-noir' class='checkbox-btn-label function-hover-raise'>film noir
+              <input id="film-noir" type='checkbox' class='checkbox-btn-input' name='film-noir' />
+              <span class='checkmark flex'>film noir</span>
+            </label>
+            <label for='history' class='checkbox-btn-label function-hover-raise'>history
+              <input id="history" type='checkbox' class='checkbox-btn-input' name='history' />
+              <span class='checkmark flex'>history</span>
+            </label>
+            <label for='horror' class='checkbox-btn-label function-hover-raise'>horror
+              <input id="horror" type='checkbox' class='checkbox-btn-input' name='horror' />
+              <span class='checkmark flex'>horror</span>
+            </label>
+            <label for='musical' class='checkbox-btn-label function-hover-raise'>musical
+              <input id="musical" type='checkbox' class='checkbox-btn-input' name='musical' />
+              <span class='checkmark flex'>musical</span>
+            </label>
+            <label for='romance' class='checkbox-btn-label function-hover-raise'>romance
+              <input id="romance" type='checkbox' class='checkbox-btn-input' name='romance' />
+              <span class='checkmark flex'>romance</span>
+            </label>
+            <label for='sci-fi' class='checkbox-btn-label function-hover-raise'>sci-fi
+              <input id="sci-fi" type='checkbox' class='checkbox-btn-input' name='sci-fi' />
+              <span class='checkmark flex'>sci-fi</span>
+            </label>
+            <label for='thriller' class='checkbox-btn-label function-hover-raise'>thriller
+              <input id="thriller" type='checkbox' class='checkbox-btn-input' name='thriller' />
+              <span class='checkmark flex'>thriller</span>
+            </label>
+          </div>
+        </fieldset>
+        <div class='form-control__btn flex'>
+        <button type='submit' class='btn-primary'><a href='home.html' id='to-home-page'>Save Changes</a></button>
+        <p><a href="home.html" id="skip" class="function-hover-line">Skip to home page</a></p>
+        </div>
+      </form>
+    </section>
+  </div>
+</main>
 <footer class="primary-footer">
   <div class="container">
     <div class="primary-footer-items flex-column-align-center">
+      <small>
+        © 2021 Linda Sandaker. For educational purposes. <br/>
+        The beautiful photos are from
+        <a class='function-hover-line' href="https://unsplash.com" target="blank"
+        ><b>Unsplash.com</b>
+        </a>
+      </small>
       <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-        <a title='Not in use' href="#" class="nav-link function-hover-line">Our Policy</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">About Us</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">Contact Us</a>
-        <a title='Not in use' href="#" class="nav-link function-hover-line">FAQ</a>
+        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">About Us</a>
+        <a title='Contact page' href="contact-us.html" class="nav-link-a function-hover-line function-focus-active">Contact Us</a>
+        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">FAQ</a>
       </nav>
       <div class="primary-footer-item-download-secure flex-column-align-center">
         <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">
@@ -220,15 +232,34 @@
           <i class="iconify" data-icon="cib:cc-mastercard"></i>
         </div>
       </div>
-      <small>
-        © 2021 Linda Sandaker. For educational purposes. <br/>
-        The beautiful photos are from
-        <a class='function-hover-line' href="https://unsplash.com" target="blank"
-        ><b>Unsplash.com</b>
-        </a>
-      </small>
     </div>
   </div>
 </footer>
 </body>
+<script>
+  const imgDiv = document.querySelector('.form-control__photo');
+  const img = document.getElementById('image');
+  const file = document.getElementById('profile_photo');
+  const uploadBtn = document.getElementById('uploadBtn');
+
+  imgDiv.addEventListener('mouseenter', function() {
+    uploadBtn.style.display = "block";
+  });
+
+  imgDiv.addEventListener('mouseleave', function() {
+    uploadBtn.style.display = "none";
+  });
+
+  file.addEventListener('change', function() {
+    const chooseFile = this.files[0];
+
+    if (chooseFile) {
+      const reader = new FileReader();
+      reader.addEventListener('load', function() {
+          img.setAttribute('src', reader.result);
+      });
+      reader.readAsDataURL(chooseFile);
+    }
+  });
+</script>
 </html>

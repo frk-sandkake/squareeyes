@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang='en'>
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="Checkout page for Days at the Museum. For the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
+    content="Contact SquareEyes. For the ultimate site for shortfilms. Upload films easy. Read and write review. Follow filmmakers and cinéphiles. © 2021 Linda Sandaker. All rights reserved.
     For educational purposes only."
   />
-  <title>Checkout page for Day at the museum | SquareEyes</title>
+  <title>Contact Us | SquareEyes</title>
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -35,7 +35,6 @@
   <script src='/js/handlers/validation.js' defer></script>
 </head>
 <body>
-<p><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
 <header class="primary-header">
   <div class="container">
     <div class="primary-header-items flex">
@@ -50,7 +49,7 @@
         <ul class="primary-navigation-ul flex-row-align-center">
           <li id='search' class="nav-link function-hover-line">
             <a title='Search' href="#" class="nav-link-a flex-column-align-center">
-              <i class="iconify function-focus-active" data-icon="fluent:search-12-filled"></i>
+              <i class="iconify" data-icon="fluent:search-12-filled"></i>
             </a>
           </li>
           <li id='archive' class="nav-link function-hover-line">
@@ -64,7 +63,7 @@
             </a>
           </li>
           <li id='home' class="nav-link function-hover-line">
-            <a href="home.html" title='Home' class="nav-link-a flex-column-align-center">
+            <a href="account-settings.html" title='account settings' class="nav-link-a flex-column-align-center">
               <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
             </a>
           </li>
@@ -78,47 +77,47 @@
     </div>
   </div>
 </header>
-<main class="main-checkout">
-  <nav id='breadcrumb' title='breadcrumb navigation' class='breadcrumb'>
-    <ul class='breadcrumb'>
-      <li><a class='function-hover-line' href="home.html">Home</a></li>
-      <li><a class='function-hover-line' href="day-at-museum.html">Day at museum</a></li>
-      <li>Payment</li>
-    </ul>
-  </nav>
-  <div class="container">
-    <section class="checkout-items__container flex-column-align-center">
-      <h1>Your order</h1>
-      <div class='checkout-details'>
-        <h2></h2>
+<main>
+  <div class='container'>
+    <section class='contact-items__container flex-column-align-center'>
+    <h1>Contact Us</h1>
+    <form id='myForm' name='contact' action='POST' class='contact-form flex-column-align-center' data-netlify='true'>
+      <fieldset class='contact-fieldset flex'>
+        <legend>Your details</legend>
+        <div class='form-control__input flex'>
+          <label for='name'>Full Name</label>
+          <input type='text' id='name' name='name'/>
+          <div class='error__container' id=nameError>
+            Please enter your first and last name
+          </div>
+        </div>
+        <div class='form-control__input flex'>
+          <label for='email'>Email</label>
+          <input type='email' name='email' id='email'/>
+          <div class='error__container' id=emailError>
+            Please enter a valid email address
+          </div>
+        </div>
+      </fieldset>
+      <fieldset class='contact-fieldset flex'>
+        <legend>Your message</legend>
+        <div class='form-control__input flex'>
+          <label for='subject'>Subject:</label>
+          <input type='text' name='subject' id='subject'/>
+          <div class='error__container' id=subjectError>
+            Please enter at least 10 characters
+          </div>
+        </div>
+        <div class='form-control__input flex'>
+          <label for='message'>Message:</label>
+          <textarea name='message' id='message' cols='30' rows='5'></textarea>
+        </div>
+      </fieldset>
+      <div class='alert__container'><p></p></div>
+      <div class='form-control__btn flex'>
+        <input type='submit' name='submit' class='btn-primary' value='Send message'/>
       </div>
-      <form action="#" method='post' class='checkout-form flex-column-align-center'>
-        <fieldset class='checkout-fieldset flex'>
-          <legend class='header-h2'>Card details</legend>
-          <div class='form-control__input flex'>
-            <label for='name' class='header-h3'>Cardholder's Name</label>
-            <input id='name' type='text' name='name' title='Please enter name on the card' required>
-          </div>
-          <div class='form-control__input flex'>
-            <label for="card-number" class="header-h3">Card Number.</label>
-            <input  id="card-number" type="password"  title='Please enter card number'
-              name="card-number">
-          </div>
-          <div class='form-control__small flex-row-align-center'>
-            <div class='form-control__input flex'>
-              <label for="valid-thru" class="header-h3">Valid thru</label>
-              <input  id="valid-thru" type="tlf" name="valid-thru" placeholder='2024-12'
-                      title='Please enter Month/Year' >
-            </div>
-            <div class='form-control__input flex'>
-              <label for="security-code" class="header-h3">CVV / CVC</label>
-              <input  id="security-code" type="password"  title='Please enter security code CCV/CVC three numbers'
-                name="security-code" placeholder="" max-length='3' required>
-            </div>
-          </div>
-        </fieldset>
-        <input type='submit' class='btn-primary function-hover-raise' value='Pay Now' >
-      </form>
+    </form>
     </section>
   </div>
 </main>
@@ -151,4 +150,23 @@
   </div>
 </footer>
 </body>
+<script>
+  document
+    .querySelector("form")
+    .addEventListener("submit", handleSubmit);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    let myForm = document.getElementById("myForm");
+    let formData = new FormData(myForm);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => console.log("Form successfully submitted"))
+      .catch((error) => alert(error));
+  };
+  console.log(handleSubmit(e));
+</script>
 </html>

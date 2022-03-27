@@ -81,16 +81,16 @@
   <div class="container">
     <section class="account-items__container flex-column-align-center">
       <h1>About Me</h1>
-      <form action="#" method="POST" class='account-form flex-column-align-center'>
-        <div class='form-control__photo'>
-          <img id='image' src='/uploads/profile-picture.svg' alt='Icon representing place for a profile picture' >
-          <input id='profile_photo' type='file' name='profile_photo'>
-          <label id='uploadBtn' for='profile_photo' class='header-h3'>Choose Photo</label>
-        </div>
+      <form action="#" class='account-form flex-column-align-center'>
         <fieldset class="account-fieldset flex">
           <legend class="header-h2">
             Personal details:
           </legend>
+          <div class='form-control__photo'>
+            <img id='image' src='/uploads/profile-picture.svg' alt='Icon representing place for a profile picture' >
+            <input id='profile_photo' type='file' name='profile_photo'>
+            <label id='uploadBtn' for='profile_photo' class='header-h3'>Choose Photo</label>
+          </div>
           <div class='form-control__input flex'>
             <label for='name' class='header-h3'>Full name</label>
             <input id='name' type='text' name='name' title='Please enter your full name'>

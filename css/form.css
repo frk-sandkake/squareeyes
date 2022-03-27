@@ -9,8 +9,8 @@ fieldset {
   padding: 1rem;
   width: 100%;
   flex-direction: column;
-text-align: left;
-  gap: .5rem;
+  text-align: left;
+  position: relative;
 }
 
 legend {
@@ -51,10 +51,11 @@ input, textarea {
   border-radius: 50%;
   border: 1px solid #00ff6c;
   overflow: hidden;
-  position: relative;
-  top: 80px;
-  left: 10%;
-  transform: translate(-50%,-50%);
+  position: absolute;
+  transform: translate(10%, -30%);
+  top:  0;
+  right: 0;
+
 }
 
 #image {
@@ -67,14 +68,13 @@ input, textarea {
 }
 
 #uploadBtn {
-  height: 30px;
+  height: 40px;
   width: 100%;
   position: absolute;
   bottom: 0;
-  left: 50%;
+  transform: translateY(30%);
   text-align: center;
-  transform: translateX(-50%);
-  font-size: 1rem;
+  font-size: .9rem;
   background-color: var(--clr-dark-yellow);
   cursor: pointer;
 }
@@ -151,4 +151,35 @@ input, textarea {
 .alert__container {
   display: none;
   text-align: center;
+}
+
+@media screen and (max-width: 880px) {
+  form {
+    width: 90%;
+  }
+
+  fieldset {
+    padding: 0 .5rem;
+  }
+
+  legend {
+    padding: 0 .5rem;
+  }
+
+  input, textarea {
+    padding: 0.1rem .1rem;
+  }
+
+  .form-control__photo {
+    width: 120px;
+    height: auto;
+    top:  -20px;
+    right: 0px;
+  }
+
+  .form-radio-btns {
+    gap: .5rem;
+  }
+
+
 }

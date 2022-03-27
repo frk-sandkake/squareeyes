@@ -1,42 +1,59 @@
-const contactForm = document.querySelector(".contact-form");
-const name = document.querySelector("#name");
-const nameError = document.querySelector("#nameError");
+const contactForm = document.getElementById("contactForm");
+const name = document.getElementById("name");
 const email = document.querySelector("#email");
-const emailError = document.querySelector("#emailError");
 const subject = document.querySelector("#subject");
-const subjectError = document.querySelector("#subjectError");
 const alertMessage = document.querySelector(".alert__container");
 
-function inputValidation(event) {
-  event.preventDefault();
-  if(checkLength(name.value, 8) === true) {
-    nameError.style.display = "none";
-  } else {
-    nameError.style.display = "block";
-  }
-  if (emailValidation(email.value) === true) {
-    emailError.style.display = "none";
-  } else {
-    emailError.style.display = "block";
-  }
-  if(checkLength(subject.value, 5) === true) {
-    subjectError.style.display = "none";
-  } else {
-    subjectError.style.display = "block";
-  }
-  if((checkLength(name.value, 8) === true) && (emailValidation(email.value) === true) && (checkLength(subject.value, 5) === true)) {
-    alertMessage.style.display = "block";
-  } else {
-    alertMessage.style.display = "none";
-  }
-}
-contactForm.addEventListener("submit", inputValidation);
+contactForm.addEventListener('submit', e => {
+  e.preventDefault();
 
-function checkLength(value, len) {
-  return value.trim().length > len;
+  validateInputs();
+});
+
+const setError = (element, message) => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = message;
+  inputControl.classList.add('error');
+  inputControl.classList.remove('success');
 }
 
-function emailValidation(email) {
-  const regEx = /\S+@\S+\.\S+/;
-  return regEx.test(email);
+const setSuccess = element => {
+  const inputControl = element.parentElement;
+  const errorDisplay = inputControl.querySelector('.error');
+
+  errorDisplay.innerText = '';
+  inputControl.classList.add('success');
+  inputControl.classList.remove('error');
+}
+
+const emailValidation = email => {
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(String(email).toLowerCase());
+}
+
+const validateInputs = () => {
+  const nameValue = name.value.trim();
+  const emailValue = email.value.trim();
+  const subjectValue = subject.value.trim();
+
+  if(nameValue === '') {
+    setError(name, 'Please enter first and last name');
+  } else {
+    setSuccess(name);
+  }
+  if (emailValue === '') {
+    setError(email, 'Please enter your email');
+  } else if (!emailValidation(emailValue)) {
+    setError(email, 'Please provide a valid email address');
+  } else {
+    setSuccess(email);
+  }
+  if(subjectValue === '') {
+    setError(subject, 'Please enter a subject');
+  } else {
+    setSuccess(subject);
+  }
+  return alertMessage.innerHTML = `<p> Your message has been sent! </p>`;
 }

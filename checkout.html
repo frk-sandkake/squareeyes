@@ -33,7 +33,6 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <script src='/js/check-out.js' defer></script>
 </head>
 <body id='body'>
 <p class='hidden'><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
@@ -90,14 +89,16 @@
     <section class="checkout-items__container flex-column-align-center">
       <h1>Your order</h1>
       <div class='checkout-details'>
-        <h2></h2>
+        <h2>Day at the Museum</h2>
+        <div class='subtitle'>Rent for 50 NOK</div>
+        <p>The Shortfilm is available for 7 days after checkout, you'll find it in your archive under rented Shortfilms.</p>
       </div>
-      <form action="#" class='checkout-form flex-column-align-center' novalidate>
+      <form id='checkOutForm' action="#"  method='post' class='checkout-form flex-column-align-center'>
         <fieldset class='checkout-fieldset flex'>
           <legend class='header-h2'>Card details</legend>
           <div class='form-control__input flex'>
             <label for='name' class='header-h3'>Cardholder's Name</label>
-            <input id='name' type='text' name='name' title='Please enter name on the card' required>
+            <input id='name' type='text' name='name' title='Please enter name on the card'>
           </div>
           <div class='form-control__input flex'>
             <label for="card-number" class="header-h3">Card Number.</label>
@@ -108,17 +109,22 @@
             <div class='form-control__input flex'>
               <label for="valid-thru" class="header-h3">Valid thru
                 <input id="valid-thru" type="tel" name="valid-thru" min='2022-06' max='2024-12' value='2024-12' required>
-                <span class='error' aria-live='polite'>Enter year and month XXXX / XX'</span>
+                <span class='error' aria-live='polite'></span>
               </label>
             </div>
             <div class='form-control__input flex'>
               <label for="security-code" class="header-h3">CVV / CVC</label>
               <input  id="security-code" type="password"  title='Please enter security code CCV/CVC three numbers'
-                name="security-code" placeholder="" required>
+                name="security-code" placeholder="" >
             </div>
           </div>
         </fieldset>
-        <button type='submit' class='btn-primary' >Check out</button>
+        <div id='alertMessage' class='alert__container'>
+          <p> Your payment is registered. You can find Day at the Museum in your archive or
+            <a href='day-at-museum.html' class='link-underline'>watch it now</a>Enjoy!
+          </p>
+        </div>
+        <button onclick='successMessage()' id='checkOutBtn' type='submit' class='btn-primary'>Check out</button>
       </form>
     </section>
   </div>
@@ -150,4 +156,9 @@
   </div>
 </footer>
 </body>
+<script>
+  function successMessage() {
+    document.querySelector("#alertMessage").style.display = 'block';
+  }
+</script>
 </html>

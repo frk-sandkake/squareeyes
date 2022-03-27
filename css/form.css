@@ -17,7 +17,12 @@ legend {
   padding: 0.5rem 1rem;
 }
 
-input {
+.form-control__input {
+  flex-direction: column;
+  margin: .5rem 1rem;
+}
+
+.form-control__input input {
   border: 0;
   border-bottom: .01rem solid var(--clr-cyan);
 }
@@ -31,24 +36,39 @@ input, textarea {
   background: var(--clr-dark-yellow);
   color: var(--clr-light-mint);
   cursor: pointer;
-  padding: 0.5rem 1rem;
-  margin: 0;
-  width: 95%;
+  padding: 0.5rem .5rem;
+  margin: .2em;
+  width: 100%;
 }
 
-input.invalid {
-  border-color: #900;
-  background-color: #fdd;
-  padding: 0.5rem 1rem;
+input:focus {
+  outline: 0;
+  box-shadow: 0 .01rem .2rem 0 rgba(251, 255, 143, 0.91);
+ }
+
+.form-control__input.success input {
+  border-color: var(--clr-green-success);
+  color: var(--clr-green-success);
 }
 
-input:focus.invalid {
-  outline: none;
+.form-control__input.error input {
+  border-color: #ffbebe;
+  color: #ffbebe;
 }
 
-.form-control__input {
-  flex-direction: column;
-  margin: .5rem 1rem;
+.form-control__input .error {
+  color: #ffbebe;
+  font-size: 1rem;
+  padding: .4rem;
+}
+
+.form-control__input .alert__container {
+  color: var(--clr-green-success);
+  height: 30px;
+}
+
+#alertMessage {
+  display: none;
 }
 
 .form-control__small {
@@ -137,46 +157,17 @@ input:focus.invalid {
   left: 0;
   width: 100%;
   height: 100%;
-  transition: 0.6s ease-in;
+  transition: 0.2s ease-in;
 }
 
 .checkbox-btn-label:where(:hover, :focus-visible), .checkmark:where(:hover, :focus-visible){
- transform: scale(1.1);
+ transform: scale(1.01);
   box-shadow: 0 .1rem .6rem .1rem rgba(251, 255, 143, 0.91);
 }
 
 .checkbox-btn-label input:checked ~ .checkmark {
   background: var(--clr-lin-grad-teal-cyan);
   color: var(--clr-dark-blue);
-}
-
-.error {
-  width: 100%;
-  font-size: 80%;
-  color: #740000;
-  background-color: #ffdddd;
-  padding: 0.5rem 1rem;
-}
-
-.error.active {
-  padding: .3em;
-  width: 100%;
-}
-.error__container {
-  display: none;
-  text-align: center;
-  color: #740000;
-  background-color: rgb(255, 238, 238, 0.75);
-  font-size: 0.8rem;
-  margin: .4rem 0;
-  padding: 0.3rem;
-  border-radius: .5rem;
-  border: 2px solid #740000;
-}
-
-.alert__container {
-  display: none;
-  text-align: center;
 }
 
 @media screen and (max-width: 880px) {

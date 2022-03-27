@@ -8,7 +8,7 @@
     --clr-cyan: #04cec8;
     --clr-mint: #97ffc3;
     --clr-light-mint: #c1fffb;
-    --clr-green-success: #8dd953;
+    --clr-green-success: #90ff97;
     --clr-lin-grad-teal-cyan: linear-gradient(to bottom, #00ff6c, #39ff80, #54ff92, #6affa2, #7effb1, #7effb1, #7effb1, #7effb1, #6affa2, #54ff92, #39ff80, #00ff6c);
     --clr-lin-grad-green: linear-gradient(to bottom, #1e6b1b, #36842a, #4d9d3a, #65b74a, #7dd25a, #7dd25a, #7dd25a, #7dd25a, #65b74a, #4d9d3a, #36842a, #1e6b1b);
     --ff-headings: 'Barlow', sans-serif;
@@ -43,8 +43,8 @@ main {
 
 h1, h2, legend, h3, label, h4 {
     font-family: var(--ff-headings);
-    padding: .5rem 0;
-    margin: .5rem 0;
+    padding: .1rem;
+    margin: .1rem;
 }
 
 h1 {

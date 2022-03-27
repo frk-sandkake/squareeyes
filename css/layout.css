@@ -1,7 +1,39 @@
 .account-items__container,
 .checkout-items__container,
-.contact-items__container {
+.contact-items__container,
+shortfilm-items__container {
   padding: 2.5rem 0;
-  width: 100%;
   gap: 2.5rem;
 }
+
+.filmmaker__card {
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.filmmaker-photo__container {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.card-social__container {
+  gap:  1rem;
+  padding: .5rem;
+}
+
+.followers {
+  justify-content: center;
+  flex-direction: row-reverse;
+}
+
+#image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.filmmaker-text__container {
+
+}
+

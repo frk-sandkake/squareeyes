@@ -9,7 +9,7 @@ const alertMessage = document.querySelector(".alert__container");
 
 function inputValidation(event) {
   event.preventDefault();
-  if(checkLength(name.value, 0) === true) {
+  if(checkLength(name.value, 8) === true) {
     nameError.style.display = "none";
   } else {
     nameError.style.display = "block";
@@ -19,12 +19,12 @@ function inputValidation(event) {
   } else {
     emailError.style.display = "block";
   }
-  if(checkLength(subject.value, 9) === true) {
+  if(checkLength(subject.value, 5) === true) {
     subjectError.style.display = "none";
   } else {
     subjectError.style.display = "block";
   }
-  if((checkLength(name.value, 0) === true) && (emailValidation(email.value) === true) && (checkLength(subject.value, 9) === true)) {
+  if((checkLength(name.value, 8) === true) && (emailValidation(email.value) === true) && (checkLength(subject.value, 5) === true)) {
     alertMessage.style.display = "block";
   } else {
     alertMessage.style.display = "none";

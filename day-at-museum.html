@@ -19,7 +19,8 @@
     />
     <link rel="stylesheet" href="/css/styles.css" type='text/css'/>
     <link rel="stylesheet" href='/css/header-footer.css' type='text/css'/>
-    <link rel="stylesheet" href="/css/day-at-museum.css" type='text/css'/>
+    <link rel="stylesheet" href='/css/form.css' type='text/css'/>
+    <link rel="stylesheet" href="/css/layout.css" type='text/css'/>
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
     <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
     <script>
@@ -77,23 +78,28 @@
   </div>
 </header>
 <main class="main-shortfilm_container">
+  <nav id='breadcrumb' title='breadcrumb navigation' class='breadcrumb'>
+    <ul class='breadcrumb'>
+      <li><a class='link-underline' href="home.html">Home</a></li>
+      <li>Day at museum</li>
+    </ul>
+  </nav>
   <div class="container">
-    <a href="home.html">Back to home</a>
-    <section class="shortfilm-items__container">
+    <section class="shortfilm-items__container flex-column-align-center">
       <h1>Day at the Museum</h1>
       <article class="shortfilm__card">
         <div class="shortfilm-video__container">
-          <p>
+          <span class='rating'>
             <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
-          </p>
-          <img class="shortfilm-img" src='/uploads/mann-looking-at-paintings.jpg' alt="mann looking at paintings"/>
-        </div>
-        <div class="shortfilm-settings__container">
+          </span>
+          <img class="shortfilm-img" src='/uploads/day-at-museum-700x495.jpg' alt="mann looking at paintings" width='725' height='495'/>
+          <span class="play-settings__container">
           <i class="iconify" data-icon="fluent:play-32-filled">play film</i>
           <i class="iconify" data-icon="majesticons:sound-up">sound</i>
           <i class="iconify" data-icon="akar-icons:normal-screen">screen-normal</i>
           <i class="iconify" data-icon="ic:baseline-subtitles">subtitles</i>
           <i class="iconify" data-icon="ci:settings-filled">settings</i>
+        </span>
         </div>
         <div class="shortfilm-actions__container">
           <a href='checkout.html' class="nav-link-a">
@@ -113,27 +119,32 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             repellat a deserunt itaque hic consectetur debitis repudiandae
             eveniet asperiores. Necessitatibus, reiciendis impedit.
-            Incidunt tempora iure aspernatur alias eligendi, molestias
-            excepturi?
           </p>
         </div>
       </article>
-      <article class="filmmaker__card">
-        <h3>Mia Nilsen</h3>
-        <div class='filmmaker-photo__container'>
-          <img class="filmmaker-img" src='/uploads/mia-nilsen.jpg' alt="filmmaker mia nilsen"/>
-        </div>
-        <div class="filmmaker-text__container">
-          <div class='subtitle' role='doc-subtitle'>Filmmaker</div>
-          <p>
-            I’ve been making films since I was little. I’m studying
-            film and producing at Noroff and I love making shortfilms.
-            Hope you enjoy them!
-          </p>
-        </div>
-        <div class='card-social__container'>
-          <a href="home.html" class=""></a>
-          <i class='iconify' data-icon=''></i>
+      <article class="filmmaker__card flex">
+          <div class='filmmaker-photo__container'>
+            <a title='See Mias profile' href="home.html">
+              <img id='image' class="filmmaker-img" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
+            </a>
+          </div>
+          <div class="filmmaker-text__container">
+            <h3>Mia Nilsen</h3>
+            <div class='subtitle' role='doc-subtitle'>Filmmaker from Norway</div>
+            <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+              <label for='follow' class='checkbox-btn-label'>follow
+                <input id="follow" type='checkbox' class='checkbox-btn-input' name='follow' />
+                <span class='checkmark flex'>follow</span>
+              </label>
+            </div>
+            <p>
+              I’ve been making films since I was little. I’m studying
+              film and producing at Noroff and I love making shortfilms.
+              Hope you enjoy them!
+            </p>
         </div>
       </article>
     </section>

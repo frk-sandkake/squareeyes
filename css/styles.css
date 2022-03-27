@@ -38,7 +38,7 @@ html, body {
 }
 
 main {
-    padding: 2rem 0;
+    padding: 2rem .5rem;
 }
 
 h1, h2, legend, h3, label, h4 {
@@ -76,17 +76,13 @@ h3, label {
     padding-top: 0;
 }
 
-h4 {
-    font-size: clamp(1.44rem, 5vw, 1.777rem);
-}
-
 p {
    font-family: var(--ff-body-txt);
    font-size: min(max(.7rem, 1.5vw), 1.1rem);
    font-weight: lighter;
    line-height: 1.6em;
    letter-spacing: .11em;
-   max-width: 55ch;
+   max-width: 50ch;
    color: var(--clr-light-mint);
 }
 
@@ -142,7 +138,6 @@ ul, li {
     position: relative;
     color: var(--clr-yellow);
     padding: .5rem;
-    border-radius: .2rem;
 }
 
 .link-underline:after {
@@ -164,7 +159,6 @@ ul, li {
 }
 
 a:focus {
-    box-shadow: 0 .1rem .1rem rgba(251, 255, 143, 0.91);
     transform: scale(1.1);
 }
 
@@ -219,12 +213,6 @@ a:active {
 .hidden {
     display: none;
     margin: 0;
-}
-
-#access_top {
-    position: sticky;
-    bottom: 0;
-    right: 0;
 }
 
 .flex {

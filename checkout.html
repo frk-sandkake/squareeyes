@@ -33,7 +33,7 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <script src='/js/validation.js' defer></script>
+  <script src='/js/check-out.js' defer></script>
 </head>
 <body id='body'>
 <p class='hidden'><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
@@ -92,7 +92,7 @@
       <div class='checkout-details'>
         <h2></h2>
       </div>
-      <form action="#" method='post' class='checkout-form flex-column-align-center'>
+      <form action="#" class='checkout-form flex-column-align-center' novalidate>
         <fieldset class='checkout-fieldset flex'>
           <legend class='header-h2'>Card details</legend>
           <div class='form-control__input flex'>
@@ -106,18 +106,19 @@
           </div>
           <div class='form-control__small flex-row-align-center'>
             <div class='form-control__input flex'>
-              <label for="valid-thru" class="header-h3">Valid thru</label>
-              <input  id="valid-thru" type="tlf" name="valid-thru" placeholder='2024-12'
-                      title='Please enter Month/Year' >
+              <label for="valid-thru" class="header-h3">Valid thru
+                <input id="valid-thru" type="tel" name="valid-thru" min='2022-06' max='2024-12' value='2024-12' required>
+                <span class='error' aria-live='polite'>Enter year and month XXXX / XX'</span>
+              </label>
             </div>
             <div class='form-control__input flex'>
               <label for="security-code" class="header-h3">CVV / CVC</label>
               <input  id="security-code" type="password"  title='Please enter security code CCV/CVC three numbers'
-                name="security-code" placeholder="" max-length='3' required>
+                name="security-code" placeholder="" required>
             </div>
           </div>
         </fieldset>
-        <input type='submit' class='btn-primary function-hover-raise' value='Pay Now' >
+        <button type='submit' class='btn-primary' >Check out</button>
       </form>
     </section>
   </div>

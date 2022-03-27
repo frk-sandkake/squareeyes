@@ -19,6 +19,8 @@
     />
     <link rel="stylesheet" href="/css/styles.css" type='text/css'/>
     <link rel="stylesheet" href='/css/header-footer.css' type='text/css'/>
+    <link rel="stylesheet" href='/css/form.css' type='text/css'/>
+    <link rel="stylesheet" href='/css/layout.css' type='text/css'/>
     <link rel="stylesheet" href="/css/home.css" type='text/css'/>
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
     <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
@@ -80,12 +82,31 @@
   <div class="container">
     <section class="main-items-home flex-column-align-center">
       <h1>Home</h1>
-     <div class='user-profile'>
-       <img src='/uploads/mia-nilsen.jpg' alt='Profile picture of Mia Nilsen'>
-       <span>Mia Nisen</span>
-       <p>Filmmaker</p>
-
-     </div>
+      <article class="filmmaker__card flex">
+        <div class='filmmaker-photo__container'>
+          <a title='See Mias profile' href="home.html">
+            <img id='image' class="filmmaker-img" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
+          </a>
+        </div>
+        <div class="filmmaker-text__container">
+          <h3>Mia Nilsen</h3>
+          <div class='subtitle' role='doc-subtitle'>Filmmaker from Norway</div>
+          <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+            <label for='follow' class='checkbox-btn-label'>follow
+              <input id="follow" type='checkbox' class='checkbox-btn-input' name='follow' />
+              <span class='checkmark flex'>follow</span>
+            </label>
+          </div>
+          <p>
+            I’ve been making films since I was little. I’m studying
+            film and producing at Noroff and I love making shortfilms.
+            Hope you enjoy them!
+          </p>
+        </div>
+      </article>
       <div class="main-film-section h-scroll">
         <h2>Filmmakers favorites:</h2>
         <article class="shortfilm-info">

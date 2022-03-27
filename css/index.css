@@ -1,19 +1,11 @@
-/* || Landing page*/
-.main-items-introduction {
-  justify-content: center;
+.landing-items__container {
+  width: 100%;
   gap: 2rem;
-  padding: 4rem .5rem;
   text-align: center;
 }
 
 .site-title {
   font-family: "Archivo Narrow", sans-serif;
-}
-
-.subtitle {
-  font-family: "Archivo Narrow", sans-serif;
-  font-size: clamp(.9rem, 2vw, 1.3rem);
-  font-weight: 100;
 }
 
 .main-item-video {
@@ -24,4 +16,17 @@
 /* || Navigation */
 #archive, #create, #home {
   display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .landing-items__container {
+    gap: 1rem;
+    padding: 2rem .5rem;
+  }
+
+  .main-item-video {
+    max-width: 90%;
+    height: auto;
+  }
+
 }

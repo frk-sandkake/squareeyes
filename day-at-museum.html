@@ -17,19 +17,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="stylesheet" href='/css/header-footer.css' />
-    <link rel="stylesheet" href="/css/day-at-museum.css" />
+    <link rel="stylesheet" href="/css/styles.css" type='text/css'/>
+    <link rel="stylesheet" href='/css/header-footer.css' type='text/css'/>
+    <link rel="stylesheet" href="/css/day-at-museum.css" type='text/css'/>
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTM3VJ49CR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-XTM3VJ49CR');
-    </script>
     <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
     <script>
       (function(h,o,t,j,a,r){
@@ -42,42 +33,42 @@
       })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
   </head>
-<body>
+<body id='body'>
+<p class='hidden'><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
 <header class="primary-header">
   <div class="container">
-    <div class="primary-header-items flex">
-      <a href='index.html' class='logo'>
-        <img
-          title='SquareEyes the shortfilm site that connects film-lovers'
-          src="./uploads/squareeyes-logo.svg"
-          alt="logo: Rectangle with brand name, slogan and camera-role"
-        />
-      </a>
+    <div class="prim-header-items__container flex">
+      <div class='prim-header-logo__container'>
+        <a href='index.html'>
+          <img
+            class='logo-svg'
+            title='SquareEyes the shortfilm site that connects film-lovers'
+            src="./uploads/squareeyes-logo.svg"
+            alt="logo: Rectangle with brand name, slogan and camera-role"
+            width='82' height='66'
+          />
+        </a>
+      </div>
       <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
-        <ul class="primary-navigation-ul flex-row-align-center">
-          <li id='search' class="nav-link function-hover-line">
-            <a title='Search' href="#" class="nav-link-a flex-column-align-center">
+        <ul class="primary-nav-ul flex-row-align-center">
+          <li id='search'>
+            <a title='Search' href="#" class="link-underline">
               <i class="iconify" data-icon="fluent:search-12-filled"></i>
             </a>
           </li>
-          <li id='archive' class="nav-link function-hover-line">
-            <a title='Archive' href="#" class="nav-link-a flex-column-align-center">
+          <li id='archive'>
+            <a title='Archive' href="#" class="link-underline">
               <i class="iconify" data-icon="icon-park-outline:movie"></i>
             </a>
           </li>
-          <li id='create' class="nav-link function-hover-line">
-            <a href="#" title='Create' class="nav-link-a flex-column-align-center">
+          <li id='create'>
+            <a href="#" title='Create' class="link-underline">
               <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
             </a>
           </li>
-          <li id='home' class="nav-link function-hover-line">
-            <a href="home.html" title='Home' class="nav-link-a flex-column-align-center">
+          <li id='home'>
+            <a href="home.html" title='Home' class="link-underline">
               <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
-            </a>
-          </li>
-          <li id='login' class="nav-link function-hover-line">
-            <a href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
-              <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
             </a>
           </li>
         </ul>
@@ -85,80 +76,83 @@
     </div>
   </div>
 </header>
-<main class="main-container">
+<main class="main-shortfilm_container">
   <div class="container">
     <a href="home.html">Back to home</a>
-    <section class="main-container-items">
+    <section class="shortfilm-items__container">
       <h1>Day at the Museum</h1>
-      <div class="main-container-items-film-page">
-        <article class="shortfilm-page">
-          <div class="shortfilm-page-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span>
-              <span class="iconify" data-icon="bx:bx-heart">like</span>
-              <span class="iconify" data-icon="fluent:add-12-filled">save for later</span>
-              <span class="iconify" data-icon="fluent:send-24-filled">share</span>
-            </span>
-          </div>
-          <a href="pay-page.html" class="function-hover-raise">
-            <img class="film-page-img" src='/uploads/mann-looking-at-paintings.jpg' alt="mann looking at paintings"/>
+      <article class="shortfilm__card">
+        <div class="shortfilm-video__container">
+          <p>
+            <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+          </p>
+          <img class="shortfilm-img" src='/uploads/mann-looking-at-paintings.jpg' alt="mann looking at paintings"/>
+        </div>
+        <div class="shortfilm-settings__container">
+          <i class="iconify" data-icon="fluent:play-32-filled">play film</i>
+          <i class="iconify" data-icon="majesticons:sound-up">sound</i>
+          <i class="iconify" data-icon="akar-icons:normal-screen">screen-normal</i>
+          <i class="iconify" data-icon="ic:baseline-subtitles">subtitles</i>
+          <i class="iconify" data-icon="ci:settings-filled">settings</i>
+        </div>
+        <div class="shortfilm-actions__container">
+          <a href='checkout.html' class="nav-link-a">
+            <i class="iconify" data-icon="zmdi:ticket-star">rent</i>Rent for 50 kr
           </a>
-          <div class="shortfilm-play-settings">
-            <span class="iconify" data-icon="fluent:play-32-filled">play film</span>
-            <span class="iconify" data-icon="majesticons:sound-up">sound</span>
-            <span class="iconify" data-icon="akar-icons:normal-screen">screen-normal</span>
-            <span class="iconify" data-icon="ic:baseline-subtitles">subtitles</span>
-            <span class="iconify" data-icon="ci:settings-filled">settings</span>
-          </div>
-          <div class="shortfilm-info-rent-review">
-            <span>
-              <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <p>Rent for 50 kr</p>
-            </span>
-            <span class="iconify" data-icon="fluent:star-edit-24-regular">review</span>
-          </div>
-          <div class="shortfilm-information-text">
-            <h5>Filmmaker: Mia Nilsen</h5>
-            <small>Horror. 15 min. English.</small>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
-              repellat a deserunt itaque hic consectetur debitis repudiandae
-              eveniet asperiores. Necessitatibus, reiciendis impedit.
-              Incidunt tempora iure aspernatur alias eligendi, molestias
-              excepturi?
-            </p>
-          </div>
-        </article>
-      </div>
-      <div class="main-container-item-about-filmmaker">
-        <article class="about-the-filmmaker">
-          <a href="#" class="function-hover-raise">
-            <img class="about-filmmaker-img" src='/uploads/mia-nilsen.jpg' alt="filmmaker mia nilsen"/>
-          </a>
-          <div class="about-filmmaker-info">
-            <h5>Mia Nilsen</h5>
-            <p>
-              I’ve been making films since I was little and now I’m studying
-              film and producing at Noroff. I love making shortfilms and
-              hope you will enjoy them! <br />
-            </p>
-          </div>
-        </article>
-      </div>
+          <span>
+            <i class="iconify" data-icon="fluent:star-edit-24-regular">review</i>
+            <i class="iconify" data-icon="bx:bx-heart">like</i>
+            <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            <i class="iconify" data-icon="fluent:send-24-filled">share</i>
+          </span>
+        </div>
+        <div class="shortfilm-text__container">
+          <h2>By: Mia Nilsen</h2>
+          <div class='subtitle' role='doc-subtitle'>Horror. 15 min. English.</div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+            repellat a deserunt itaque hic consectetur debitis repudiandae
+            eveniet asperiores. Necessitatibus, reiciendis impedit.
+            Incidunt tempora iure aspernatur alias eligendi, molestias
+            excepturi?
+          </p>
+        </div>
+      </article>
+      <article class="filmmaker__card">
+        <h3>Mia Nilsen</h3>
+        <div class='filmmaker-photo__container'>
+          <img class="filmmaker-img" src='/uploads/mia-nilsen.jpg' alt="filmmaker mia nilsen"/>
+        </div>
+        <div class="filmmaker-text__container">
+          <div class='subtitle' role='doc-subtitle'>Filmmaker</div>
+          <p>
+            I’ve been making films since I was little. I’m studying
+            film and producing at Noroff and I love making shortfilms.
+            Hope you enjoy them!
+          </p>
+        </div>
+        <div class='card-social__container'>
+          <a href="home.html" class=""></a>
+          <i class='iconify' data-icon=''></i>
+        </div>
+      </article>
     </section>
   </div>
 </main>
 <footer class="primary-footer">
   <div class="container">
-    <div class="primary-footer-items flex-column-align-center">
-      <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">About Us</a>
-        <a title='Contact page' href="contact-us.html" class="nav-link-a function-hover-line function-focus-active">Contact Us</a>
-        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">FAQ</a>
+    <div class="prim-footer-items__container flex-column-align-center">
+      <small>
+        © 2021 Linda Sandaker. For educational purposes. <br/>
+        The beautiful photos are from
+        <a href="https://unsplash.com" target="blank" class='link-underline'>Unsplash.com</a>
+      </small>
+      <nav id="secondary-nav" class="secondary-nav flex-row-align-center">
+        <a title='Not in use' href="#" class='link-underline' >About Us</a>
+        <a title='Contact page' href="contact-us.html"  class='link-underline'>Contact Us</a>
+        <a title='Not in use' href="#" class='link-underline'>FAQ</a>
       </nav>
-      <div class="primary-footer-item-download-secure flex-column-align-center">
+      <div class="prim-footer-icons__container flex-column-align-center">
         <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">
           <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" width="200" alt="google play and apple app store logos" /></a>
         <div class='secure-payment flex-row-align-center'>
@@ -168,13 +162,6 @@
           <i class="iconify" data-icon="cib:cc-mastercard"></i>
         </div>
       </div>
-      <small>
-        © 2021 Linda Sandaker. For educational purposes. <br/>
-        The beautiful photos are from
-        <a class='function-hover-line' href="https://unsplash.com" target="blank"
-        ><b>Unsplash.com</b>
-        </a>
-      </small>
     </div>
   </div>
 </footer>

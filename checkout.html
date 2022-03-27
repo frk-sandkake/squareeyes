@@ -17,9 +17,10 @@
     crossorigin="anonymous"
     referrerpolicy="no-referrer"
   />
-  <link rel="stylesheet" href="/css/styles.css" />
-  <link rel="stylesheet" href='/css/header-footer.css' />
-  <link rel="stylesheet" href='/css/form.css' />
+  <link rel="stylesheet" href="/css/styles.css" type='text/css' />
+  <link rel="stylesheet" href='/css/header-footer.css' type='text/css'/>
+  <link rel="stylesheet" href='/css/form.css' type='text/css'/>
+  <link rel='stylesheet' href='/css/layout.css' type='text/css'>
   <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
   <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
   <script>
@@ -32,45 +33,44 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
-  <script src='/js/handlers/validation.js' defer></script>
+  <script src='/js/validation.js' defer></script>
 </head>
-<body>
-<p><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
+<body id='body'>
+<p class='hidden'><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
 <header class="primary-header">
   <div class="container">
-    <div class="primary-header-items flex">
-      <a href='index.html' class='logo'>
-        <img
-          title='SquareEyes the shortfilm site that connects film-lovers'
-          src="./uploads/squareeyes-logo.svg"
-          alt="logo: Rectangle with brand name, slogan and camera-role"
-        />
-      </a>
+    <div class="prim-header-items__container flex">
+      <div class='prim-header-logo__container'>
+        <a href='index.html'>
+          <img
+            class='logo-svg'
+            title='SquareEyes the shortfilm site that connects film-lovers'
+            src="./uploads/squareeyes-logo.svg"
+            alt="logo: Rectangle with brand name, slogan and camera-role"
+            width='82' height='66'
+          />
+        </a>
+      </div>
       <nav id='primary_nav' title='Primary navigation' class="primary-navigation">
-        <ul class="primary-navigation-ul flex-row-align-center">
-          <li id='search' class="nav-link function-hover-line">
-            <a title='Search' href="#" class="nav-link-a flex-column-align-center">
-              <i class="iconify function-focus-active" data-icon="fluent:search-12-filled"></i>
+        <ul class="primary-nav-ul flex-row-align-center">
+          <li id='search'>
+            <a title='Search' href="#" class="link-underline">
+              <i class="iconify" data-icon="fluent:search-12-filled"></i>
             </a>
           </li>
-          <li id='archive' class="nav-link function-hover-line">
-            <a title='Archive' href="#" class="nav-link-a flex-column-align-center">
+          <li id='archive'>
+            <a title='Archive' href="#" class="link-underline">
               <i class="iconify" data-icon="icon-park-outline:movie"></i>
             </a>
           </li>
-          <li id='create' class="nav-link function-hover-line">
-            <a href="#" title='Create' class="nav-link-a flex-column-align-center">
+          <li id='create'>
+            <a href="#" title='Create' class="link-underline">
               <i class="iconify" data-icon="ant-design:video-camera-add-outlined"></i>
             </a>
           </li>
-          <li id='home' class="nav-link function-hover-line">
-            <a href="home.html" title='Home' class="nav-link-a flex-column-align-center">
+          <li id='home'>
+            <a href="home.html" title='Home' class="link-underline">
               <i class="iconify" data-icon="healthicons:ui-user-profile"></i>
-            </a>
-          </li>
-          <li id='login' class="nav-link function-hover-line">
-            <a href="signup.html" title='Login' class="nav-link-a flex-column-align-center">
-              <i class='iconify' data-icon="healthicons:ui-user-profile"></i>
             </a>
           </li>
         </ul>
@@ -81,8 +81,8 @@
 <main class="main-checkout">
   <nav id='breadcrumb' title='breadcrumb navigation' class='breadcrumb'>
     <ul class='breadcrumb'>
-      <li><a class='function-hover-line' href="home.html">Home</a></li>
-      <li><a class='function-hover-line' href="day-at-museum.html">Day at museum</a></li>
+      <li><a class='link-underline' href="home.html">Home</a></li>
+      <li><a class='link-underline' href="day-at-museum.html">Day at museum</a></li>
       <li>Payment</li>
     </ul>
   </nav>
@@ -124,13 +124,18 @@
 </main>
 <footer class="primary-footer">
   <div class="container">
-    <div class="primary-footer-items flex-column-align-center">
-      <nav id="secondary-nav" class="primary-footer-secondary-navigation flex-row-align-center">
-        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">About Us</a>
-        <a title='Contact page' href="contact-us.html" class="nav-link-a function-hover-line function-focus-active">Contact Us</a>
-        <a title='Not in use' href="#" class="nav-link-a function-hover-line function-focus-active">FAQ</a>
+    <div class="prim-footer-items__container flex-column-align-center">
+      <small>
+        © 2021 Linda Sandaker. For educational purposes. <br/>
+        The beautiful photos are from
+        <a href="https://unsplash.com" target="blank" class='link-underline'>Unsplash.com</a>
+      </small>
+      <nav id="secondary-nav" class="secondary-nav flex-row-align-center">
+        <a title='Not in use' href="#" class='link-underline' >About Us</a>
+        <a title='Contact page' href="contact-us.html"  class='link-underline'>Contact Us</a>
+        <a title='Not in use' href="#" class='link-underline'>FAQ</a>
       </nav>
-      <div class="primary-footer-item-download-secure flex-column-align-center">
+      <div class="prim-footer-icons__container flex-column-align-center">
         <a href="https://www.freepnglogos.com/pics/app-store-png-logo" title="Image from freepnglogos.com">
           <img src="https://www.freepnglogos.com/uploads/app-store-logo-png/google-play-and-apple-app-store-logos-22.png" width="200" alt="google play and apple app store logos" /></a>
         <div class='secure-payment flex-row-align-center'>
@@ -140,13 +145,6 @@
           <i class="iconify" data-icon="cib:cc-mastercard"></i>
         </div>
       </div>
-      <small>
-        © 2021 Linda Sandaker. For educational purposes. <br/>
-        The beautiful photos are from
-        <a class='function-hover-line' href="https://unsplash.com" target="blank"
-        ><b>Unsplash.com</b>
-        </a>
-      </small>
     </div>
   </div>
 </footer>

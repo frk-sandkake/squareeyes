@@ -1,0 +1,7 @@
+.account-items__container,
+.checkout-items__container,
+.contact-items__container {
+  padding: 2.5rem 0;
+  width: 100%;
+  gap: 2.5rem;
+}

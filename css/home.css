@@ -1,10 +1,6 @@
 .main-film-section {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
   margin: 1rem;
   padding: 1rem;
-  width: 160px;
   border-radius: 0.5rem;
 }
 

@@ -1,5 +1,4 @@
 .landing-items__container {
-  width: 100%;
   gap: 2rem;
   text-align: center;
 }
@@ -8,11 +7,13 @@
   font-family: "Archivo Narrow", sans-serif;
 }
 
-.main-item-video {
-  max-width: 70%;
-  height: auto;
+.landing-carousel__container {
+  width: 100%;
 }
 
+.landing-carousel__container img {
+  width: 55%;
+}
 /* || Navigation */
 #archive, #create, #home {
   display: none;
@@ -25,8 +26,7 @@
   }
 
   .main-item-video {
-    max-width: 90%;
+    width: 90%;
     height: auto;
   }
-
 }

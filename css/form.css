@@ -115,8 +115,7 @@ input:focus {
 }
 
 .form-radio-btns {
-  justify-content: flex-start;
-  gap: 1rem;
+  justify-content: center;
 }
 
 .form-checkbox-btns {
@@ -194,9 +193,4 @@ input:focus {
     top:  -20px;
     right: 0;
   }
-
-  .form-radio-btns {
-    gap: .5rem;
-  }
-
 }

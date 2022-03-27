@@ -30,6 +30,7 @@
 
 .prim-footer-items__container {
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .secondary-nav {

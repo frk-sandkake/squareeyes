@@ -66,6 +66,11 @@ h3, label {
     color: var(--clr-cyan);
 }
 
+h4, label {
+    font-size: min(max(.8rem, 2vw), 1rem);
+    color: var(--clr-mint);
+}
+
 .subtitle {
     font-family: "Archivo Narrow", sans-serif;
     font-size: min(max(.8rem, 1.5vw), 1.2rem);
@@ -229,6 +234,13 @@ a:active {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.h-scroll {
+    height: 100%;
+    width: 100%;
+    overflow-x: scroll;
+    margin: auto;
 }
 
 @media screen and (max-width: 580px) {

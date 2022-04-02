@@ -1,17 +1,18 @@
 .account-items__container,
 .checkout-items__container,
 .contact-items__container,
-shortfilm-items__container {
+.shortfilm-items__container,
+.home-items__container {
   padding: 2.5rem 0;
   gap: 2.5rem;
 }
 
-.filmmaker__card {
+.profile__card {
   flex-direction: row;
   gap: 1rem;
 }
 
-.filmmaker-photo__container {
+.profile-photo__container {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -27,13 +28,85 @@ shortfilm-items__container {
   flex-direction: row-reverse;
 }
 
-#image {
+.card-image {
   width: 100%;
   height: 100%;
   border-radius: 50%;
 }
 
-.filmmaker-text__container {
-
+.shortfilms__container {
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
 }
 
+.shortfilms-carousel__container {
+  flex-direction: row;
+  gap: 1rem;
+  padding: .5rem;
+}
+
+.shortfilm__card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  padding: .5rem;
+}
+
+.shortfilm-img {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.shortfilm-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.shortfilm-rating {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.shortfilm__card h4 {
+  position: absolute;
+  z-index: 3;
+  bottom: 18%;
+  left: 2%;
+  padding: 0;
+  background-color: rgba(43, 43, 43, 0.93);
+}
+
+.shortfilm__card p {
+  position: absolute;
+  z-index: 2;
+  bottom: 23%;
+  left: 2%;
+  margin: 0;
+  background-color: rgba(43, 43, 43, 0.93);
+}
+
+.shortfilm__card small {
+  position: absolute;
+  z-index: 2;
+  bottom: 13%;
+  left: 2%;
+  background-color: rgba(43, 43, 43, 0.93);
+}
+
+.shortfilm-icons {
+  justify-content: space-between;
+}
+
+@media screen  and (max-width: 600px) {
+  .profile__card {
+    flex-direction: column;
+  }
+
+  .profile-photo__container {
+    width: 100px;
+    height: 100px;
+  }
+}

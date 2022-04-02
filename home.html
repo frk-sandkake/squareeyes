@@ -21,7 +21,6 @@
     <link rel="stylesheet" href='/css/header-footer.css' type='text/css'/>
     <link rel="stylesheet" href='/css/form.css' type='text/css'/>
     <link rel="stylesheet" href='/css/layout.css' type='text/css'/>
-    <link rel="stylesheet" href="/css/home.css" type='text/css'/>
     <script src="https://code.iconify.design/2/2.0.4/iconify.min.js" defer></script>
     <!-- Hotjar Tracking Code for https://squareeyes-c53e51.netlify.app -->
     <script>
@@ -78,18 +77,18 @@
     </div>
   </div>
 </header>
-<main class="main-home-page">
+<main>
   <div class="container">
-    <section class="main-items-home flex-column-align-center">
+    <section class="home-items__container flex-column-align-center">
       <h1>Home</h1>
-      <article class="filmmaker__card flex">
-        <div class='filmmaker-photo__container'>
+      <article class="profile__card flex">
+        <div class='profile-photo__container'>
           <a title='See Mias profile' href="home.html">
-            <img id='image' class="filmmaker-img" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
+            <img class="card-image" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
           </a>
         </div>
-        <div class="filmmaker-text__container">
-          <h3>Mia Nilsen</h3>
+        <div class="profile-text__container">
+          <h2>Mia Nilsen</h2>
           <div class='subtitle' role='doc-subtitle'>Filmmaker from Norway</div>
           <div class='card-social__container flex-row-align-center'>
               <span class='followers flex-row-align-center'>23 579
@@ -107,602 +106,436 @@
           </p>
         </div>
       </article>
-      <div class="main-film-section">
-        <h2>Filmmakers favorites:</h2>
-        <div class='main-container-items-films-overview carousel flex-row-align-center h-scroll'>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <span>
+      <div class="shortfilms__container flex h-scroll">
+        <h3>Filmmakers favorites:</h3>
+        <div class='shortfilms-carousel__container flex'>
+          <article class="shortfilm__card">
+            <h4>Day at the museum</h4>
+            <p>Mia Nilsen</p>
+            <small>Horror 15 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
                 <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <a href="day-at-museum.html" class="">
-                <img class="film-card-img" src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
-              </a>
+              <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
             </div>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
                 <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
-              </span>
+              </a>
               <span>
-                <i class="iconify" data-icon="bx:bx-heart">like</i>
-                <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
-              </span>
-              <h3>Day at the museum</h3>
-              <p>Filmmaker: Mia Nilsen <br />
-                <small>Horror. 15 min. English.</small>
-              </p>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <p>
-                <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-              </p>
-              <span
-                ><span class="iconify" data-icon="bx:bx-heart">like</span
-                ><!--<span
-                class="iconify"
-                data-icon="bx:bxs-heart"
-                style="color: #da0707"
-              >favorite</span>--><span
-                  class="iconify"
-                  data-icon="fluent:add-12-filled"
-                  >save for later</span
-                ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                  >unsave</span
-                >--></span
-              >
-            </div>
-            <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-img"
-                src='/uploads/gas-station.jpg'
-                alt="a gas station in orange and blue light"
-            /></a>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
-                <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-                <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-                <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                  >review</span
-                >-->
+          <article class="shortfilm__card">
+            <h4>Orange Sky</h4>
+            <p>John Michael</p>
+            <small>Adventure 5 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <h5>Orange Sky</h5>
-              <p>
-                Filmmaker: John Michael <br />
-                <small>Adventure. 5 min. English.</small>
-              </p>
+              <img src='/uploads/gas-station.jpg' alt="a gas station in orange and blue light" width='430' height='400' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <p>
-                <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-              </p>
-              <span
-                ><span class="iconify" data-icon="bx:bx-heart">like</span
-                ><!--<span
-                class="iconify"
-                data-icon="bx:bxs-heart"
-                style="color: #da0707"
-              >favorite</span>--><span
-                  class="iconify"
-                  data-icon="fluent:add-12-filled"
-                  >save for later</span
-                ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                  >unsave</span
-                >--></span
-              >
-            </div>
-            <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-img"
-                src='/uploads/closeup-camera.jpg'
-                alt="closeup picture of a camera"
-            /></a>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
-               <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-                <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-                 <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                  >review</span
-                >-->
+          <article class="shortfilm__card">
+            <h4>Eye of the beholder</h4>
+            <p>Mario Santina</p>
+            <small>Crime 17 min Italian</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <h5>In the eye of the beholder</h5>
-              <p>
-                Filmmaker: Mario Santina <br />
-                <small>Crime. 17 min. Italian.</small>
-              </p>
+              <img  src='/uploads/closeup-camera.jpg' alt='closeup picture of a camera' width='380' height='360' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <p>
-                <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-              </p>
-              <span
-                ><span class="iconify" data-icon="bx:bx-heart">like</span
-                ><!--<span
-                class="iconify"
-                data-icon="bx:bxs-heart"
-                style="color: #da0707"
-              >favorite</span>--><span
-                  class="iconify"
-                  data-icon="fluent:add-12-filled"
-                  >save for later</span
-                ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                  >unsave</span
-                >--></span
-              >
-            </div>
-            <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-img"
-                src='/uploads/woman-washingmachines.jpg'
-                alt="woman sitting in front of washing machines"
-            /></a>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
-                <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-                <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-                <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                  >review</span
-                >-->
+          <article class="shortfilm__card">
+            <h4>What happened?</h4>
+            <p>Nadia Antonov</p>
+            <small>Romance 11 min Russian</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <h5>What happened?</h5>
-              <p>
-                Filmmaker: Nadia Antonov <br />
-                <small>Romance. 11 min. Russian.</small>
-              </p>
+              <img  src='/uploads/woman-washingmachines.jpg' alt='woman sitting in front of washing machines' width='480' height='480' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <p>
-                <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-              </p>
-              <span
-                ><span class="iconify" data-icon="bx:bx-heart">like</span
-                ><!--<span
-                class="iconify"
-                data-icon="bx:bxs-heart"
-                style="color: #da0707"
-              >favorite</span>--><span
-                  class="iconify"
-                  data-icon="fluent:add-12-filled"
-                  >save for later</span
-                ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                  >unsave</span
-                >--></span
-              >
-            </div>
-            <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-img"
-                src='/uploads/woman-standing-position.jpg'
-                alt="woman standing in front of tree"
-            /></a>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
-                <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-                <!-- <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                  >review</span
-                >-->
+          <article class="shortfilm__card">
+            <h4>Every day</h4>
+            <p>Sarah Kahn</p>
+            <small>Fantasy 7 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <h5>Every day</h5>
-              <p>
-                Filmmaker: Sarah Kahn <br />
-                <small>Fantasy. 7 min. English.</small>
-              </p>
+              <img  src='/uploads/woman-standing-position.jpg' alt="woman standing in front of tree" width='390' height='415' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
-          <article class="shortfilm-info">
-            <div class="shortfilm-info-rating-favorite-save-share">
-              <p>
-                <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-              </p>
-              <span
-                ><span class="iconify" data-icon="bx:bx-heart">like</span
-                ><!--<span
-                class="iconify"
-                data-icon="bx:bxs-heart"
-                style="color: #da0707"
-              >favorite</span>--><span
-                  class="iconify"
-                  data-icon="fluent:add-12-filled"
-                  >save for later</span
-                ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                  >unsave</span
-                >--></span
-              >
-            </div>
-            <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-img"
-                src='/uploads/stairs.jpg'
-                alt="red stairs"
-            /></a>
-            <div class="shortfilm-info-rent-review-text">
-              <span>
-                <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-                <!-- <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-                <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                  >review</span
-                >-->
+          <article class="shortfilm__card">
+            <h4>Stairs to nowhere</h4>
+            <p>André Maré</p>
+            <small>Musical 17 min Portuguese</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
               </span>
-              <h5>Stairs to nowhere</h5>
-              <p>
-                Filmmaker: André Maré <br />
-                <small>Musical. 17 min. Portuguese</small>
-              </p>
+              <img src='/uploads/stairs.jpg' alt="red stairs" width='420' height='452' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
             </div>
           </article>
         </div>
       </div>
-      <div class="main-container-items-films-overview h-scroll">
-        <h2>Community's watching:</h2>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="day-at-museum.html" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/day-at-museum-500x500.jpg'
-              alt="mann looking at paintings"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-              <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <!-- <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+      <div class="shortfilms__container flex h-scroll">
+        <h3>Community's watching:</h3>
+        <div class='shortfilms-carousel__container flex'>
+          <article class="shortfilm__card">
+            <h4>Day at the museum</h4>
+            <p>Mia Nilsen</p>
+            <small>Horror 15 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>Day at the museum</h5>
-            <p>
-              Filmmaker: Mia Nilsen <br />
-              <small>Horror. 15 min. English.</small>
-            </p>
-          </div>
-        </article>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="#" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/gas-station.jpg'
-              alt="a gas station in orange and blue light"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-              <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-              <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+            </div>
+          </article>
+          <article class="shortfilm__card">
+            <h4>Orange Sky</h4>
+            <p>John Michael</p>
+            <small>Adventure 5 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img src='/uploads/gas-station.jpg' alt="a gas station in orange and blue light" width='430' height='400' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>Orange Sky</h5>
-            <p>
-              Filmmaker: John Michael <br />
-              <small>Adventure. 5 min. English.</small>
-            </p>
-          </div>
-        </article>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="#" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/closeup-camera.jpg'
-              alt="closeup picture of a camera"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-             <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-              <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-               <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+            </div>
+          </article>
+          <article class="shortfilm__card">
+            <h4>Eye of the beholder</h4>
+            <p>Mario Santina</p>
+            <small>Crime 17 min Italian</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img  src='/uploads/closeup-camera.jpg' alt='closeup picture of a camera' width='380' height='360' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>In the eye of the beholder</h5>
-            <p>
-              Filmmaker: Mario Santina <br />
-              <small>Crime. 17 min. Italian.</small>
-            </p>
-          </div>
-        </article>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="#" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/woman-washingmachines.jpg'
-              alt="woman sitting in front of washing machines"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-              <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-              <!--<span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+            </div>
+          </article>
+          <article class="shortfilm__card">
+            <h4>What happened?</h4>
+            <p>Nadia Antonov</p>
+            <small>Romance 11 min Russian</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img  src='/uploads/woman-washingmachines.jpg' alt='woman sitting in front of washing machines' width='480' height='480' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>What happened?</h5>
-            <p>
-              Filmmaker: Nadia Antonov <br />
-              <small>Romance. 11 min. Russian.</small>
-            </p>
-          </div>
-        </article>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="#" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/woman-standing-position.jpg'
-              alt="woman standing in front of tree"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-              <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <!-- <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+            </div>
+          </article>
+          <article class="shortfilm__card">
+            <h4>Every day</h4>
+            <p>Sarah Kahn</p>
+            <small>Fantasy 7 min English</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img  src='/uploads/woman-standing-position.jpg' alt="woman standing in front of tree" width='390' height='415' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>Every day</h5>
-            <p>
-              Filmmaker: Sarah Kahn <br />
-              <small>Fantasy. 7 min. English.</small>
-            </p>
-          </div>
-        </article>
-        <article class="shortfilm-info">
-          <div class="shortfilm-info-rating-favorite-save-share">
-            <p>
-              <span class="iconify" data-icon="bx:bxs-star">rating</span>8.9
-            </p>
-            <span
-              ><span class="iconify" data-icon="bx:bx-heart">like</span
-              ><!--<span
-              class="iconify"
-              data-icon="bx:bxs-heart"
-              style="color: #da0707"
-            >favorite</span>--><span
-                class="iconify"
-                data-icon="fluent:add-12-filled"
-                >save for later</span
-              ><!--<span class="iconify" data-icon="fluent:subtract-12-filled"
-                >unsave</span
-              >--></span
-            >
-          </div>
-          <a href="#" class="function-hover-raise"
-            ><img
-            class="film-card-img"
-              src='/uploads/stairs.jpg'
-              alt="red stairs"
-          /></a>
-          <div class="shortfilm-info-rent-review-text">
-            <span>
-              <span class="iconify" data-icon="emojione-monotone:free-button"></span>
-              <!-- <span class="iconify" data-icon="zmdi:ticket-star">rent</span>
-              <span class="iconify" data-icon="fluent:star-edit-24-regular"
-                >review</span
-              >-->
+            </div>
+          </article>
+          <article class="shortfilm__card">
+            <h4>Stairs to nowhere</h4>
+            <p>André Maré</p>
+            <small>Musical 17 min Portuguese</small>
+            <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+              <img src='/uploads/stairs.jpg' alt="red stairs" width='420' height='452' />
+            </div>
+            <div class="shortfilm-icons flex-row-align-center">
+              <a href="day-at-museum.html" class="link-underline">
+                <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+              </a>
+              <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
             </span>
-            <h5>Stairs to nowhere</h5>
-            <p>
-              Filmmaker: André Maré <br />
-              <small>Musical. 17 min. Portuguese</small>
-            </p>
-          </div>
-        </article>
+            </div>
+          </article>
+        </div>
       </div>
-      <div class="main-container-items-films-overview h-scroll">
-        <h2>Latest reviews:</h2>
-          <article class="shortfilm-review">
-            <div class="shortfilm-review-info">
-              <img
-                class="shortfilm-review-img"
-                src='/uploads/matthew-brown-200x200.jpg'
-                alt="filmmaker mia nilsen"
-            /><p>
-                <b>Matthew Brown</b>
-                <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br /><i>Read more...</i></p>
+      <div class="shortfilms__container flex h-scroll">
+        <h3>Latest reviews:</h3>
+        <div class='shortfilms-carousel__container flex'>
+          <article class="profile__card flex">
+            <div class='profile-photo__container'>
+              <a title='See Matthews profile' href="#">
+                <img class="card-image" src='/uploads/matthew-brown-200x200.jpg' alt="Cinéphile Matthew Brown" width='200' height='200'/>
+              </a>
             </div>
-            <div class="shortfilm-review-info day-at-the-museum">
-              <p><b>Day at the museum</b><br>
-                by: Mia Nilsen <br />
-                Horror. 15 min. English.
+            <div class="profile-text__container">
+              <h2>Matthew Brown</h2>
+              <div class='subtitle' role='doc-subtitle'>Cinéphile form Boston</div>
+              <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+                <label for='follow1' class='checkbox-btn-label'>follow
+                  <input id="follow1" type='checkbox' class='checkbox-btn-input' name='follow' />
+                  <span class='checkmark flex'>follow</span>
+                </label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <a href='#' class='link-underline'><i>Read more...</i></a>
               </p>
-              <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-review-img"
-                src='/uploads/day-at-museum-500x500.jpg'
-                alt="mann looking at paintings"
-            /></a></div>
-          </article>
-          <article class="shortfilm-review">
-            <div class="shortfilm-review-info">
-              <img
-                class="shortfilm-review-img"
-                src='/uploads/matthew-brown-200x200.jpg'
-                alt="filmmaker mia nilsen"
-            /><p>
-                <b>Matthew Brown</b>
-                <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br /><i>Read more...</i></p>
             </div>
-            <div class="shortfilm-review-info day-at-the-museum">
-              <p><b>Day at the museum</b><br>
-                by: Mia Nilsen <br />
-                Horror. 15 min. English.
-              </p>
-              <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-review-img"
-                src='/uploads/day-at-museum-500x500.jpg'
-                alt="mann looking at paintings"
-            /></a></div>
+            <article class="shortfilm__card">
+              <h4>Day at the museum</h4>
+              <p>Mia Nilsen</p>
+              <small>Horror 15 min English</small>
+              <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+                <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
+              </div>
+              <div class="shortfilm-icons flex-row-align-center">
+                <a href="day-at-museum.html" class="link-underline">
+                  <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+                </a>
+                <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
+              </div>
+            </article>
           </article>
-          <article class="shortfilm-review">
-            <div class="shortfilm-review-info">
-              <img
-                class="shortfilm-review-img"
-                src='/uploads/matthew-brown-200x200.jpg'
-                alt="filmmaker mia nilsen"
-            /><p>
-                <b>Matthew Brown</b>
-                <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br /><i>Read more...</i></p>
+          <article class="profile__card flex">
+            <div class='profile-photo__container'>
+              <a title='See Matthews profile' href="#">
+                <img class="card-image" src='/uploads/matthew-brown-200x200.jpg' alt="Cinéphile Matthew Brown" width='200' height='200'/>
+              </a>
             </div>
-            <div class="shortfilm-review-info day-at-the-museum">
-              <p><b>Day at the museum</b><br>
-                by: Mia Nilsen <br />
-                Horror. 15 min. English.
+            <div class="profile-text__container">
+              <h2>Matthew Brown</h2>
+              <div class='subtitle' role='doc-subtitle'>Cinéphile form Boston</div>
+              <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+                <label for='follow2' class='checkbox-btn-label'>follow
+                  <input id="follow2" type='checkbox' class='checkbox-btn-input' name='follow2' />
+                  <span class='checkmark flex'>follow</span>
+                </label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <a href='#' class='link-underline'><i>Read more...</i></a>
               </p>
-              <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-review-img"
-                src='/uploads/day-at-museum-500x500.jpg'
-                alt="mann looking at paintings"
-            /></a></div>
-          </article>
-          <article class="shortfilm-review">
-            <div class="shortfilm-review-info">
-              <img
-                class="shortfilm-review-img"
-                src='/uploads/matthew-brown-200x200.jpg'
-                alt="filmmaker mia nilsen"
-            /><p>
-                <b>Matthew Brown</b>
-                <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br /><i>Read more...</i></p>
             </div>
-            <div class="shortfilm-review-info day-at-the-museum">
-              <p><b>Day at the museum</b><br>
-                by: Mia Nilsen <br />
-                Horror. 15 min. English.
-              </p>
-              <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-review-img"
-                src='/uploads/day-at-museum-500x500.jpg'
-                alt="mann looking at paintings"
-            /></a></div>
+            <article class="shortfilm__card">
+              <h4>Day at the museum</h4>
+              <p>Mia Nilsen</p>
+              <small>Horror 15 min English</small>
+              <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+                <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
+              </div>
+              <div class="shortfilm-icons flex-row-align-center">
+                <a href="day-at-museum.html" class="link-underline">
+                  <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+                </a>
+                <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
+              </div>
+            </article>
           </article>
-          <article class="shortfilm-review">
-            <div class="shortfilm-review-info">
-              <img
-                class="shortfilm-review-img"
-                src='/uploads/matthew-brown-200x200.jpg'
-                alt="filmmaker mia nilsen"
-            /><p>
-                <b>Matthew Brown</b>
-                <br />Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                <br /><i>Read more...</i></p>
+          <article class="profile__card flex">
+            <div class='profile-photo__container'>
+              <a title='See Matthews profile' href="#">
+                <img class="card-image" src='/uploads/matthew-brown-200x200.jpg' alt="Cinéphile Matthew Brown" width='200' height='200'/>
+              </a>
             </div>
-            <div class="shortfilm-review-info day-at-the-museum">
-              <p><b>Day at the museum</b><br>
-                by: Mia Nilsen <br />
-                Horror. 15 min. English.
+            <div class="profile-text__container">
+              <h2>Matthew Brown</h2>
+              <div class='subtitle' role='doc-subtitle'>Cinéphile form Boston</div>
+              <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+                <label for='follow3' class='checkbox-btn-label'>follow
+                  <input id="follow3" type='checkbox' class='checkbox-btn-input' name='follow3' />
+                  <span class='checkmark flex'>follow</span>
+                </label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <a href='#' class='link-underline'><i>Read more...</i></a>
               </p>
-              <a href="#" class="function-hover-raise"
-              ><img
-              class="film-card-review-img"
-                src='/uploads/day-at-museum-500x500.jpg'
-                alt="mann looking at paintings"
-            /></a></div>
+            </div>
+            <article class="shortfilm__card">
+              <h4>Day at the museum</h4>
+              <p>Mia Nilsen</p>
+              <small>Horror 15 min English</small>
+              <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+                <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
+              </div>
+              <div class="shortfilm-icons flex-row-align-center">
+                <a href="day-at-museum.html" class="link-underline">
+                  <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+                </a>
+                <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
+              </div>
+            </article>
           </article>
+          <article class="profile__card flex">
+            <div class='profile-photo__container'>
+              <a title='See Matthews profile' href="#">
+                <img class="card-image" src='/uploads/matthew-brown-200x200.jpg' alt="Cinéphile Matthew Brown" width='200' height='200'/>
+              </a>
+            </div>
+            <div class="profile-text__container">
+              <h2>Matthew Brown</h2>
+              <div class='subtitle' role='doc-subtitle'>Cinéphile form Boston</div>
+              <div class='card-social__container flex-row-align-center'>
+              <span class='followers flex-row-align-center'>23 579
+                <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
+              </span>
+                <label for='follow4' class='checkbox-btn-label'>follow
+                  <input id="follow4" type='checkbox' class='checkbox-btn-input' name='follow4' />
+                  <span class='checkmark flex'>follow</span>
+                </label>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                <a href='#' class='link-underline'><i>Read more...</i></a>
+              </p>
+            </div>
+            <article class="shortfilm__card">
+              <h4>Day at the museum</h4>
+              <p>Mia Nilsen</p>
+              <small>Horror 15 min English</small>
+              <div class="shortfilm-img">
+              <span class='shortfilm-rating'>
+                <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
+              </span>
+                <img src='/uploads/day-at-museum-500x500.jpg' alt="mann looking at paintings" width='500' height='500' />
+              </div>
+              <div class="shortfilm-icons flex-row-align-center">
+                <a href="day-at-museum.html" class="link-underline">
+                  <i class="iconify" data-icon="zmdi:ticket-star">rent</i>
+                </a>
+                <span>
+              <i class="iconify" data-icon="bx:bx-heart">like</i>
+              <i class="iconify" data-icon="fluent:add-12-filled">save for later</i>
+            </span>
+              </div>
+            </article>
+          </article>
+        </div>
       </div>
     </section>
   </div>

@@ -8,13 +8,23 @@
 }
 
 .profile__card {
-  flex-direction: row;
-  gap: 1rem;
+  flex-direction: row-reverse;
+  justify-content: center;
+  position: relative;
 }
 
 .profile-photo__container {
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
 }
 
@@ -28,12 +38,6 @@
   flex-direction: row-reverse;
 }
 
-.card-image {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
-
 .shortfilms__container {
   flex-direction: column;
   justify-content: flex-start;
@@ -43,7 +47,7 @@
 .shortfilms-carousel__container {
   flex-direction: row;
   gap: 1rem;
-  padding: .5rem;
+  padding: 1rem;
 }
 
 .shortfilm__card {
@@ -66,6 +70,7 @@
 
 .shortfilm-rating {
   position: absolute;
+  z-index: 1;
   top: 0;
   left: 0;
 }
@@ -100,13 +105,58 @@
   justify-content: space-between;
 }
 
-@media screen  and (max-width: 600px) {
-  .profile__card {
-    flex-direction: column;
-  }
+.reviews-carousel__container {
+  flex-direction: row;
+  gap: 1rem;
+  padding: 1rem;
+  width: max-content;
+}
 
+.review__container {
+  flex-direction: column-reverse;
+  justify-content: center;
+  width: 280px;
+  padding: .5rem;
+}
+
+.review__container .shortfilm__card {
+  width: 250px;
+  height: 250px;
+}
+
+.review__container .shortfilm__card .shortfilm-img {
+  width: 210px;
+  height: 210px;
+}
+
+.shortfilm-play__card {
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.shortfilm-video__container {
+  position: relative;
+  width: 500px;
+  height: 300px;
+}
+
+.shortfilm-video-img {
+  width: 500px;
+  height: 300px;
+}
+
+.play-settings__container {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(43, 43, 43, 0.93);
+}
+
+@media screen and (max-width: 767px) {
   .profile-photo__container {
-    width: 100px;
-    height: 100px;
+    max-width: 40%;
+    max-height: 40%;
   }
 }

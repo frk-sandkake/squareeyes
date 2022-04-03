@@ -56,24 +56,24 @@ h1 {
 }
 
 h2, legend {
-    font-size: min(max(1rem, 5vw), 2rem);
+    font-size: min(max(1.3rem, 5vw), 1.8rem);
     text-transform: uppercase;
     color: var(--clr-cyan);
 }
 
 h3, label {
-    font-size: min(max(.9rem, 4vw), 1.7rem);
+    font-size: min(max(1.1rem, 4vw), 1.5rem);
     color: var(--clr-cyan);
 }
 
 h4, label {
-    font-size: min(max(.8rem, 2vw), 1rem);
+    font-size: min(max(1rem, 3vw), 1.3rem);
     color: var(--clr-mint);
 }
 
 .subtitle {
     font-family: "Archivo Narrow", sans-serif;
-    font-size: min(max(.8rem, 1.5vw), 1.2rem);
+    font-size: min(max(.8rem, 1.5vw), 1.1rem);
     font-weight: 100;
     letter-spacing: .1rem;
     text-transform: uppercase;

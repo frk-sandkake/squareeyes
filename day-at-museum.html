@@ -87,12 +87,12 @@
   <div class="container">
     <section class="shortfilm-items__container flex-column-align-center">
       <h1>Day at the Museum</h1>
-      <article class="shortfilm__card">
+      <article class="shortfilm-play__card flex">
         <div class="shortfilm-video__container">
-          <span class='rating'>
+          <span class='shortfilm-rating'>
             <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
           </span>
-          <img class="shortfilm-img" src='/uploads/day-at-museum-700x495.jpg' alt="mann looking at paintings" width='725' height='495'/>
+          <img class="shortfilm-video-img" src='/uploads/day-at-museum-700x495.jpg' alt="mann looking at paintings" width='725' height='495'/>
           <span class="play-settings__container">
           <i class="iconify" data-icon="fluent:play-32-filled">play film</i>
           <i class="iconify" data-icon="majesticons:sound-up">sound</i>
@@ -102,7 +102,7 @@
         </span>
         </div>
         <div class="shortfilm-actions__container">
-          <a href='checkout.html' class="nav-link-a">
+          <a href='checkout.html' class="link-underline">
             <i class="iconify" data-icon="zmdi:ticket-star">rent</i>Rent for 50 kr
           </a>
           <span>
@@ -114,37 +114,37 @@
         </div>
         <div class="shortfilm-text__container">
           <h2>By: Mia Nilsen</h2>
-          <div class='subtitle' role='doc-subtitle'>Horror. 15 min. English.</div>
-          <p>
+          <div class='subtitle' role='doc-subtitle'>Horror 15 min English.</div>
+          <p class='about-shortfilm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             repellat a deserunt itaque hic consectetur debitis repudiandae
             eveniet asperiores. Necessitatibus, reiciendis impedit.
           </p>
         </div>
       </article>
-      <article class="filmmaker__card flex">
-          <div class='filmmaker-photo__container'>
-            <a title='See Mias profile' href="home.html">
-              <img id='image' class="filmmaker-img" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
-            </a>
-          </div>
-          <div class="filmmaker-text__container">
-            <h3>Mia Nilsen</h3>
-            <div class='subtitle' role='doc-subtitle'>Filmmaker from Norway</div>
-            <div class='card-social__container flex-row-align-center'>
+      <article class="profile__card flex">
+        <div class='profile-photo__container'>
+          <a title='See Mias profile' href="home.html">
+            <img class="card-image" src='/uploads/mia-nilsen-200x200.jpg' alt="filmmaker mia nilsen" width='200' height='200'/>
+          </a>
+        </div>
+        <div class="profile-text__container">
+          <h3>Mia Nilsen</h3>
+          <div class='subtitle' role='doc-subtitle'>Filmmaker from Norway</div>
+          <div class='card-social__container flex-row-align-center'>
               <span class='followers flex-row-align-center'>23 579
                 <i class='iconify' data-icon='fluent:people-community-28-filled'></i>
               </span>
-              <label for='follow' class='checkbox-btn-label'>follow
-                <input id="follow" type='checkbox' class='checkbox-btn-input' name='follow' />
-                <span class='checkmark flex'>follow</span>
-              </label>
-            </div>
-            <p>
-              I’ve been making films since I was little. I’m studying
-              film and producing at Noroff and I love making shortfilms.
-              Hope you enjoy them!
-            </p>
+            <label for='follow' class='checkbox-btn-label'>follow
+              <input id="follow" type='checkbox' class='checkbox-btn-input' name='follow' />
+              <span class='checkmark flex'>follow</span>
+            </label>
+          </div>
+          <p>
+            I’ve been making films since I was little. I’m studying
+            film and producing at Noroff and I love making shortfilms.
+            Hope you enjoy them!
+          </p>
         </div>
       </article>
     </section>

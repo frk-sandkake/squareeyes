@@ -6,30 +6,11 @@ const alertMessage = document.querySelector(".alert__container");
 
 contactForm.addEventListener('submit', e => {
   e.preventDefault();
-
   validateInputs();
 });
 
-const setError = (element, message) => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-
-  errorDisplay.innerText = message;
-  inputControl.classList.add('error');
-  inputControl.classList.remove('success');
-}
-
-const setSuccess = element => {
-  const inputControl = element.parentElement;
-  const errorDisplay = inputControl.querySelector('.error');
-
-  errorDisplay.innerText = '';
-  inputControl.classList.add('success');
-  inputControl.classList.remove('error');
-}
-
 const emailValidation = email => {
-  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(String(email).toLowerCase());
 }
 
@@ -38,7 +19,7 @@ const validateInputs = () => {
   const emailValue = email.value.trim();
   const subjectValue = subject.value.trim();
 
-  if(nameValue === '') {
+  if (nameValue === '') {
     setError(name, 'Please enter first and last name');
   } else {
     setSuccess(name);
@@ -50,10 +31,14 @@ const validateInputs = () => {
   } else {
     setSuccess(email);
   }
-  if(subjectValue === '') {
+  if (subjectValue === '') {
     setError(subject, 'Please enter a subject');
   } else {
     setSuccess(subject);
   }
-  return alertMessage.innerHTML = `<p> Your message has been sent! </p>`;
+  if ((nameValue) && (emailValue) && (subjectValue)) {
+    alertMessage.style.display = 'block';
+  }  else {
+    alertMessage.style.display = 'none';
+  }
 }

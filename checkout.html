@@ -33,6 +33,8 @@
       a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
   </script>
+  <script src='/js/checkout-validation.js' defer></script>
+    <script src='/js/handlers/error-success-message.js' defer></script>
 </head>
 <body id='body'>
 <p class='hidden'><a href="#primary_nav" id="access_nav" class="access_aid">Skip to navigation</a></p>
@@ -99,23 +101,25 @@
           <div class='form-control__input flex'>
             <label for='name' class='header-h3'>Cardholder's Name</label>
             <input id='name' type='text' name='name' title='Please enter name on the card'>
+              <div class='error' aria-live="polite"></div>
           </div>
           <div class='form-control__input flex'>
             <label for="card-number" class="header-h3">Card Number.</label>
             <input  id="card-number" type="password"  title='Please enter card number'
               name="card-number">
+              <div class='error' aria-live="polite"></div>
           </div>
           <div class='form-control__small flex-row-align-center'>
             <div class='form-control__input flex'>
               <label for="valid-thru" class="header-h3">Valid thru
                 <input id="valid-thru" type="tel" name="valid-thru" min='2022-06' max='2024-12' value='2024-12' required>
-                <span class='error' aria-live='polite'></span>
               </label>
             </div>
             <div class='form-control__input flex'>
               <label for="security-code" class="header-h3">CVV / CVC</label>
               <input  id="security-code" type="password"  title='Please enter security code CCV/CVC three numbers'
                 name="security-code" placeholder="" >
+                <div class='error' aria-live="polite"></div>
             </div>
           </div>
         </fieldset>
@@ -124,7 +128,7 @@
             <a href='day-at-museum.html' class='link-underline'>watch it now</a>Enjoy!
           </p>
         </div>
-        <button onclick='successMessage()' id='checkOutBtn' type='submit' class='btn-primary'>Check out</button>
+        <input id='checkOutBtn' type='submit' class='btn-primary' value='Check Out'/>
       </form>
     </section>
   </div>
@@ -156,9 +160,4 @@
   </div>
 </footer>
 </body>
-<script>
-  function successMessage() {
-    document.querySelector("#alertMessage").style.display = 'block';
-  }
-</script>
 </html>

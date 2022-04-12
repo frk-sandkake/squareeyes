@@ -62,7 +62,8 @@ input:focus {
   padding: .4rem;
 }
 
-.form-control__input .alert__container {
+.alert__container {
+  display: none;
   color: var(--clr-green-success);
   height: 30px;
 }

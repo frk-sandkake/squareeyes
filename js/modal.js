@@ -6,7 +6,8 @@ const btnSuccess = document.getElementById("successMessage")
 const alertMessage = document.querySelector(".alert__container");
 const signUpField = document.querySelector(".sign-up-fieldset");
 
-btnSignUp.onclick = function() {
+btnSignUp.onclick = function(event) {
+  event.preventDefault();
   modal.style.display = "block";
 }
 

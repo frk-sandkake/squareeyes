@@ -6,9 +6,9 @@ One of my school projects during Front-end Development (21-23), Noroff Oslo.
 
 
 ## Design:
-In design I made my first Style tile and Prototype after what we'd learned about colours, typography and hierarchy.
+In design, I made my first Style tile and Prototype after what we'd learned about colours, typography and hierarchy.
 We used Figma for wireframing, PhotoPea.com for photo editing and Color.Adobe.com for contrast checking.  
-<img height="400" src="C:\Users\linda\workspace\ca\squareeyes\uploads\squareeyes-style-tile1.0.webp" title="First edition Style tile for SquareEyes" width="400"/>
+![](.readme/squareeyes-style-tile1.0.jpg)
 
 ## HTML/CSS:
 

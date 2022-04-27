@@ -65,7 +65,7 @@ input:focus {
 .alert__container {
   display: none;
   color: var(--clr-green-success);
-  height: 30px;
+  padding: 1em;
 }
 
 #alertMessage {
@@ -189,8 +189,8 @@ input:focus {
   }
 
   .form-control__photo {
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 100px;
     top:  -20px;
     right: 0;
   }

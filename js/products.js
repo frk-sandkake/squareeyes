@@ -5,10 +5,8 @@ async function getMovies() {
   try {
     const response = await fetch(moviesURL_API);
     const moviesSquareeyes = await response.json();
-    console.log(moviesSquareeyes);
     for (let i = 0; i < moviesSquareeyes.length; i++) {
       let imageThumbnail = moviesSquareeyes[i].images[0].thumbnail;
-      console.log(moviesSquareeyes[i].images[0].thumbnail);
         moviesContainer.innerHTML += `
               <article class="shortfilm__card">
                 <a href="shortfilm-details.html?id=${moviesSquareeyes[i].id}">
@@ -35,7 +33,7 @@ async function getMovies() {
            `
     }
   } catch(error) {
-    console.log(error, 'Hello');
+    moviesContainer.innerHTML = `Sorry for the inconvenience, but there seems to be an error here..:(`;
   }
 }
 getMovies().then();

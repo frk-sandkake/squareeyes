@@ -48,7 +48,7 @@ async function getSingleMovieId() {
       </article>
     `
   } catch(error) {
-    console.log(error, "Hello");
+    shortfilmItemsContainer.innerHTML = `Sorry for the inconvenience, but there seems to be an error here..:(`;
   }
 }
 getSingleMovieId().then();

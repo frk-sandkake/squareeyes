@@ -7,17 +7,18 @@ async function getMovies() {
     const moviesSquareeyes = await response.json();
     for (let i = 0; i < moviesSquareeyes.length; i++) {
       let imageThumbnail = moviesSquareeyes[i].images[0].thumbnail;
+      let imageAlt = moviesSquareeyes[i].images[0].alt;
         moviesContainer.innerHTML += `
               <article class="shortfilm__card">
                 <a href="shortfilm-details.html?id=${moviesSquareeyes[i].id}">
                   <h4>${moviesSquareeyes[i].name}</h4>
                   <p>${moviesSquareeyes[i].short_description}</p>
-                  <small>${moviesSquareeyes[i].categories[0].name}</small>
+                  <small>${moviesSquareeyes[i].categories[3].name} ${moviesSquareeyes[i].categories[0].name} ${moviesSquareeyes[i].categories[4].name}</small>
                   <div class="shortfilm-img">
                     <span class='shortfilm-rating'>
                       <i class="iconify" data-icon="bx:bxs-star">rating</i>8.9
                     </span>
-                    <img src="${imageThumbnail}" alt="" />
+                    <img src="${imageThumbnail}" alt="${imageAlt}" />
                   </div>
                   <div class="shortfilm-icons flex-row-align-center">
                     <span class="link-underline">

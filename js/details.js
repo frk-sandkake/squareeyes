@@ -38,7 +38,7 @@ async function getSingleMovieId() {
         </div>
         <div class="shortfilm-text__container">
           <h2>${singleMoviePage.short_description}</h2>
-          <div class='subtitle' role='doc-subtitle'>${singleMoviePage.categories[0].name}</div>
+          <div class='subtitle' role='doc-subtitle'>${singleMoviePage.categories[3].name} ${singleMoviePage.categories[0].name} ${singleMoviePage.categories[4].name}</div>
           <p class='about-shortfilm'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
             repellat a deserunt itaque hic consectetur debitis repudiandae

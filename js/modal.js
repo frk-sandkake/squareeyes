@@ -15,7 +15,8 @@ iconSignUp.onclick = function() {
   modal.style.display = "block";
 }
 
-btnSuccess.onclick = function() {
+btnSuccess.onclick = function(event) {
+  event.preventDefault();
   modal.style.display = "block";
   alertMessage.style.display = "block";
   btnSuccess.style.display = "none";

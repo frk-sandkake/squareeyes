@@ -52,7 +52,7 @@ input:focus {
 }
 
 .form-control__input.error input {
-  border-color: #ffbebe;
+  border-color: #d07979;
   color: #ffbebe;
 }
 

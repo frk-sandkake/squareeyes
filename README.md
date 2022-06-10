@@ -46,7 +46,14 @@ and lastly made IxD research and adjustments in Interaction Design.
 It's a shortfilms website, where you can share your creations, free or for a fee. 
 There's a social element where you can follow both filmmakers and film watchers, like and share, and write reviews.  
 
-Language used; HTML, CSS and Vanilla JavaScript.
+
+### Language; 
+HTML, CSS and Vanilla JavaScript. No frameworks allowed.
+
+### Features:
+- Login/signup Modal.
+- Contact Form with JavaScript validation.
+- Upload profile image temporarily with JavaScript.
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -55,8 +62,10 @@ Language used; HTML, CSS and Vanilla JavaScript.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [ ] Clean up HTML and CSS
-- [ ] Correct ARIA
+- [ ] Clean up HTML, CSS and JavaScript
+- [ ] Update accessibility
+- [ ] Add JavaScript for like, follow, 
+- [ ] Add JavaScript for add and remove movies to Archive
 - [ ] Make new CMS for the movies, and collect the API
 - [ ] Add "components" document to easily copy & paste sections
 
@@ -112,6 +121,8 @@ Project Link: [https://github.com/lindamsandaker/squareeyes](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
+* [Coding In Nepal Upload profile photo](https://www.youtube.com/watch?v=pmKC5nbiuXo)
+* [Adam Nagy Form Validation](https://dev.to/javascriptacademy/form-validation-using-javascript-34je)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Img Shields](https://shields.io)
 * [Iconify Design](https://iconify.design/)
